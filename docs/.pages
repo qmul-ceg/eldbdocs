@@ -1,0 +1,8 @@
+nav:
+    - Home: index.md
+    - Connecting:
+        - eldb_connection_overview.md
+        - eldb_vpn_setup.md
+        - eldb_connect_vpn.md
+    - Data Information:
+        - ...

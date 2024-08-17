@@ -1,0 +1,51 @@
+site_name: East London Database
+theme:
+  name: material
+  features:
+    # - navigation.tabs
+    # - navigation.sections
+    - navigation.path
+    # - toc.integrate
+    # - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default # light mode
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: indigo # header, sidebar, text links +
+      accent: purple # hovered links, buttons, scroll bars
+    - scheme: slate # dark mode
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: indigo
+      accent: light blue
+  # logo: img/CEG_logo.png
+  favicon: img/favicon.ico
+
+plugins:
+  - search
+  - awesome-pages
+
+markdown_extensions:
+  - pymdownx.betterem # improved md formatting
+  - pymdownx.caret # adds underline (^^) (& superscript (^)
+  - pymdownx.mark # adds highlighting (==)
+  - pymdownx.tilde # adds strikethrough (~)
+  - pymdownx.details # collapsable sections (???)
+  - pymdownx.superfences # nesting & custom fences 
+  - pymdownx.highlight:
+      anchor_linenums: true # code highlighting
+  - pymdownx.inlinehilite # code highlighting
+  - pymdownx.snippets # insert md or html snippets
+  - admonition # callouts
+
+copyright: |
+  &copy; 2024 <a href="https://www.qmul.ac.uk/ceg/" target="_blank" rel="noopener">Clinical Effectiveness Group</a>
+
