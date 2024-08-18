@@ -14,20 +14,16 @@ theme:
     - content.code.copy
   language: en
   palette:
-    - scheme: default # light mode
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-      primary: indigo # header, sidebar, text links +
-      accent: purple # hovered links, buttons, scroll bars
-    - scheme: slate # dark mode
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-      primary: indigo
-      accent: light blue
+    - scheme: qmul # default # light mode
+      primary: custom # indigo # header, sidebar, text links +
+      accent: custom # purple # hovered links, buttons, scroll bars
+  font:
+    text: Source Sans Pro Regular
   # logo: img/CEG_logo.png
   favicon: img/favicon.ico
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search
@@ -49,3 +45,19 @@ markdown_extensions:
 copyright: |
   &copy; 2024 <a href="https://www.qmul.ac.uk/ceg/" target="_blank" rel="noopener">Clinical Effectiveness Group</a>
 
+extra:
+  analytics: 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.

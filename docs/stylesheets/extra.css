@@ -1,0 +1,12 @@
+[data-md-color-scheme="qmul"] {
+    --md-primary-fg-color: #21376A;
+    --md-primary-fg-color--light: #21376A;
+    --md-primary-fg-color--dark: #21376A;
+    
+    --md-accent-fg-color:  #7B0E72;
+
+    --md-default-fg-color:  #21376A;
+    --md-default-fg-color--light:  #21376A;
+
+    --md-typeset-color:  #21376A;
+}
