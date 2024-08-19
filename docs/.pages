@@ -5,4 +5,7 @@ nav:
         - eldb_vpn_setup.md
         - eldb_connect_vpn.md
     - Data Information:
-        - ...
+        - structure.md
+        - lookup.md
+        - core.md
+        - registers.md

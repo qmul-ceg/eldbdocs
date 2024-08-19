@@ -1,4 +1,4 @@
-site_name: East London Database
+site_name: CEG East London DataBase Documentation
 theme:
   name: material
   features:
@@ -19,8 +19,8 @@ theme:
       accent: custom # purple # hovered links, buttons, scroll bars
   font:
     text: Source Sans Pro Regular
-  # logo: img/CEG_logo.png
-  favicon: img/favicon.ico
+  logo: img/CEG_logo_white3.png
+  favicon: img/CEG_logo_sq.png
 
 extra_css:
   - stylesheets/extra.css
