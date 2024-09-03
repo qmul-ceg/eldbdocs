@@ -14,6 +14,7 @@ person_id   | identifier of person
 patient_id  | identifier of patient at a practice
 
 Additional fields specific to the table are described below.
+
 ***
 ## Anxiety: `anxiety`
 Anxiety code (ANX_CEG) recorded \>= last 24 months.
@@ -32,6 +33,7 @@ Anxiety covers a range of Common Mental Health disorders, including
 -   Obsessive-Compulsive behaviour (OCD)
 -   Post-Trauma Stress (PSTD)
 -   Occupation-related Stress
+  
 ***
 ## Asthma: `asthma`
 Asthma code (AST_COD) excluding patients with a more recent resolved code (ASTRES_COD), and include Asthma Treatment meds code (ASTTRT_COD) recorded \>= last 12 months. (QOF)
@@ -62,6 +64,7 @@ earliest_date | earliest, ie diagnosis, date of code for register
 earliest_code | SNOMED concept id for earliest code
 earliest_name | code term for earliest code
 
+***
 ## Cancer: `cancer`
 *Cancer code (CAN_COD) recorded \>= 2003-04-01*
 
@@ -71,6 +74,7 @@ earliest_date | earliest, ie diagnosis, date of code for register
 earliest_code | SNOMED concept id for earliest code
 earliest_name | code term for earliest code
 
+***
 ## Chronic Heart Disease: `chd`
 *CHD code (CHD_COD) recorded ever*
 
@@ -80,6 +84,7 @@ earliest_date | earliest, ie diagnosis, date of code for register
 earliest_code | SNOMED concept id for earliest code
 earliest_name | code term for earliest code
 
+***
 ## Chronic Kidney Disease: `ckd`
 *Aged \>= 18 years, and CKD code (CKD_COD) excluding patients with a more recent resolved code (CKDRES_COD) or a more recent CKD 1 or 2 code (CKD1AND2_COD)*
 
@@ -89,6 +94,7 @@ earliest_date | earliest, ie diagnosis, date of code for register
 earliest_code | SNOMED concept id for earliest code
 earliest_name | code term for earliest code
 
+***
 ## Chronic Obstructive Pulmonary Disease: `copd`
 COPD code (COPD_COD) excluding patients with a more recent resolved code (COPDRES_COD), and where patients have a previous resolved code (COPDRES_COD), COPD code (COPD_COD) after the latest resolved code (COPDRES_COD)
 

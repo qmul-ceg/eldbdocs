@@ -1,8 +1,8 @@
 # CORE
 The `CORE` table is the central table of the database, holding the details of all patients registered with a NEL GP Practice on the run date.
 
-##CORE Table
-*Regular registration with a start date prior to the run date and an end date NULL or after the run date, at a currently active GP Practice, excluding patients with Date of Death \>= run date or with a record indicating patient has died, or is identifiable*[^1] *by patient's name as a Dummy/Test patient, or aged \>= 120 years.*
+## CORE Table: `CORE`
+Regular registration with a start date prior to the run date and an end date NULL or after the run date, at a currently active GP Practice, excluding patients with Date of Death \>= run date or with a record indicating patient has died, or is identifiable*[^1] *by patient's name as a Dummy/Test patient, or aged \>= 120 years.
 
 fieldname      | description
 ----------     |------------
@@ -29,21 +29,21 @@ Views are virtual tables within a SQL database that provide a specified subset o
 ### CORE Area: Registration
 View based on area_id, which is defined by the location of the registered GP Practice.
 
-- **CORE_BK**
-- **CORE_CH**
-- **CORE_HV**
-- **CORE_NH**
-- **CORE_RB**
-- **CORE_TH**
-- **CORE_WF**
+- `CORE_BK`
+- `CORE_CH`
+- `CORE_HV`
+- `CORE_NH`
+- `CORE_RB`
+- `CORE_TH`
+- `CORE_WF`
 
 ### CORE Area: Residency
 View based on pt_area_id, which is defined by patient's identified current address. These are the patients actually resident within the borough.
 
-- **CORE_BK_pt**
-- **CORE_CH_pt**
-- **CORE_HV_pt**
-- **CORE_NH_pt**
-- **CORE_RB_pt**
-- **CORE_TH_pt**
-- **CORE_WF_pt**
+- `CORE_BK_pt`
+- `CORE_CH_pt`
+- `CORE_HV_pt`
+- `CORE_NH_pt`
+- `CORE_RB_pt`
+- `CORE_TH_pt`
+- `CORE_WF_pt`

@@ -1,4 +1,4 @@
-# CEG-VPN Access
+# CEG-VPN Setup
 
 ## Your ovpn Key File
 You will receive a small ovpn file from CEG in the format *your name.ovpn.* This is a text file containing various keys, ie passwords, to allow you access to the CEG VPN. It is personal to you and should be stored in a secure location on your device specific to you, such as your Documents or your OneDrive. You can use it on multiple devices, but you can only log into the VPN from one device at a time.

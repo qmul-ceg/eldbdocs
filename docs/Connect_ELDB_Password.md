@@ -1,35 +1,4 @@
-# Logging in
-## Connecting to CEG-VPN
-
-- Right-click the OpenVPN tray icon on your taskbar or click the Tunnelblick icon on your status bar and click Connect. A window will appear with connection messages.
-- On the first-time logging in, you will need to provide username/password information.
-```
-Username = your ovpn file name. eg “danield”
-Password = “push”
-```
-These are instructions for the OpenVPN/Duo system and not an actual username/password.
-
-- Click or Tick to Save the Password.
-- Click OK or wait 5 seconds for the client to automatically make the connection.
-
-The connection window will show various messages, including that it is sending PUSH REQUEST messages.
-You should receive a Duo notification on your phone. Sometimes this is a bit slow, and you may need to open the app to see the notification. 
-
-- Tap Accept on the notification.
-
-The connection window will take a few more seconds to complete the connection messages and then close or can be closed.
-Once connected, the OpenVPN tray icon will show as green or the Tunnelblick icon will be highlighted.
-
-More information can be found:
-<https://community.openvpn.net/openvpn/wiki/OpenVPN-GUI>
-<https://tunnelblick.net/czQuick.html>
-
-## Disconnect from CEG-VPN
-When you have finished using ELDB, disconnect from the server in the software that you are using and then disconnect from the VPN. Disconnecting from the VPN whilst still connected to a resource can cause some programmes to hang for a short while.
-
-- Right-click the OpenVPN tray icon on your taskbar and click Disconnect.
-- Or click on Disconnect in the Tunnelblick menu icon and Quit.
-
+# ELDB Server Password
 ## Your ELDB Server Username and Password
 CEG will provide you with a csv file containing the access and authentication details for the ELDB server. These are the credentials that will need to enter into the application that you use to query the ELDB data (eg SSMS, MS Access, R etc). The csv file will be sent to you separate from the CEG-VPN credentials. These credentials consist of:
 
@@ -56,7 +25,7 @@ Password generators are available online, including:
 <https://diceware.dmuth.org/>
 
 ### Changing your Password using SQL
-This is the simplest method, if you have an SQL client (SSMS, ADS, DBeaver etc) that is connected to the ELDB Server. Even if you don’t use SQL for data querying, it may be useful to have a SQL client connection specifically for this purpose.
+This is the simplest method, if you have an [SQL client](Connect_SQL_Clients.md) (SSMS, ADS, DBeaver etc) that is connected to the ELDB Server. Even if you don’t use SQL for data querying, it may be useful to have a SQL client connection specifically for this purpose.
 
 In the SQL client, create a new query and enter:
 ```sql
@@ -68,15 +37,16 @@ Note the single quotes around the new and old passwords. Run the query and check
 You will need to separately change any connection details in your applications to the new password.
 
 ### Changing your Password using MS Access
-This method requires that you have an ODBC DSN set up for the ELDB Server for use in Microsoft Access.
+This method requires that you have an [ODBC DSN](Connect_ODBC_DSN.md) set up for the ELDB Server for use in [Microsoft Access](Connect_MS_Access.md).
 
 - Create a new Access database and proceed in the same way as instructed below for linking ELDB tables to Access:
 - Select to connect to a SQL Server or an ODBC data source.
-- Select _Link the data source by creating a linked table_ and select the DSN that you created for the ELDB Server under the Machine Data Source tab.
+- Select *Link the data source by creating a linked table* and select the DSN that you created for the ELDB Server under the Machine Data Source tab.
+![MS Access Setup](img/Connecting/MSAccess_DSN.png){align=left}    
 - In the SQL Server Login Pop Up, enter your old (or current) password and click _Options >>_ to display the additional settings.
 - Confirm that Database refers the right database.
-- Tick _Change Password_ and provide a new password
-- Click OK and then OK to close the _Link Tables_ window. OK and Close any still open windows and then the Access database.
+- Tick *Change Password* and provide a new password
+- Click OK and then OK to close the *Link Tables* window. OK and Close any still open windows and then the Access database.
 
 Your password will have now been changed on the server and so can be used or changed in any other Access databases or applications you use.
 

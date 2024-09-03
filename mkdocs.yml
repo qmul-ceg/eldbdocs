@@ -19,8 +19,8 @@ theme:
       accent: custom # purple # hovered links, buttons, scroll bars
   font:
     text: Source Sans Pro Regular
-  logo: img/CEG_logo_white3.png
-  favicon: img/CEG_logo_sq.png
+  logo: img/Logos/CEG_logo_white3.png
+  favicon: img/Logos/CEG_logo_sq.png
 
 extra_css:
   - stylesheets/extra.css
@@ -41,6 +41,8 @@ markdown_extensions:
   - pymdownx.inlinehilite # code highlighting
   - pymdownx.snippets # insert md or html snippets
   - admonition # callouts
+  - attr_list
+  - md_in_html
 
 copyright: |
   &copy; 2024 <a href="https://www.qmul.ac.uk/ceg/" target="_blank" rel="noopener">Clinical Effectiveness Group</a>
