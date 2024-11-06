@@ -1,12 +1,13 @@
 site_name: CEG East London DataBase Documentation
 theme:
   name: material
+  custom_dir: overrides
   features:
-    # - navigation.tabs
+    - navigation.tabs
     # - navigation.sections
     - navigation.path
     # - toc.integrate
-    # - navigation.top
+    - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -18,12 +19,15 @@ theme:
       primary: custom # indigo # header, sidebar, text links +
       accent: custom # purple # hovered links, buttons, scroll bars
   font:
-    text: Source Sans Pro Regular
-  logo: img/Logos/CEG_logo_white3.png
-  favicon: img/Logos/CEG_logo_sq.png
+    text: Source Sans 3
+    code: Source Code Pro
+  logo: img/logos/CEG_logo_white3.png
+  favicon: img/logos/CEG_logo_sq.png
 
+watch:
+  - overrides
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 
 plugins:
   - search
