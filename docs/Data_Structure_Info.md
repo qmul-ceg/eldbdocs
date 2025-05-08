@@ -7,7 +7,8 @@ Activities. Additional columns and Lookup tables are provided where useful to as
 In eldb2024 the database schema, build history and design is set out in the following tables:
 
 ***
-## Tables: `db_tables`
+
+## `db_tables` (tables in database)
 List of all tables within the database
 
 fieldname     | description
@@ -22,8 +23,7 @@ modified_time | last modification time of table
 column_count  | count of columns within table
 row_count     | count of rows in table
 
-***
-## Columns: `db_columns`
+## `db_columns` (columns in tables)
 List of all columns within the database
 
 fieldname     | description
@@ -40,8 +40,7 @@ is_primary_key | column is included within the table's Primary Key
 is_index       | column is included within a table index
 column_count   | count of entries in column
 
-***
-## Codes: `db_codes`
+## `db_codes` (codes in columns)
 List of codes, with counts, for each code column in the database
 
 fieldname   | description
@@ -55,8 +54,7 @@ code_count  | count of codes within column
 
 See the [NHS Digital PCD Portal](<https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/quality-and-outcomes-framework-qof/quality-and-outcome-framework-qof-business-rules/primary-care-domain-reference-set-portal>) for more information on the standard codesets.
 
-***
-## Counts: `db_counts`
+## `db_counts` (row counts of tables)
 Patient counts by Practice for each Register and Activity table within the database.
 
 fieldname                                 | description
@@ -67,8 +65,7 @@ practice_name                             | GP Practice name.
 clinical_system                           | clinical data system (EMIS, SystmOne) used within the GP Practice. This is based on information from CEG reporting.
 *column for each register/activity table* | patient count for table by GP Practice.
 
-***
-## Routines: `db_routines`
+## `db_routines` (routines in database)
 List of all stored procedures and functions within the database. Use for build and admin.
 
 fieldname     | description

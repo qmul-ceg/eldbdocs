@@ -1,25 +1,30 @@
+/* This file is used to override the default styles of mkdocs-material.
+ * It is loaded after the default stylesheets, so it can be used to override them */
+
+ /* Colours */
 [data-md-color-scheme="qmul"] {
     --md-primary-fg-color: #21376A;
-    --md-primary-fg-color--light: #1F7791;
+    --md-primary-fg-color--light:  #434343; /*#0c746a;*/
     --md-primary-fg-color--dark: #21376A;
     
     --md-accent-fg-color:  #7B0E72;
 
     --md-default-fg-color:  #21376A;
-    --md-default-fg-color--light:  #1F7791;
+    --md-default-fg-color--light:  #0c746a; /*#0c746a; /*#1F7791;*/
 
-    --md-typeset-color:  #21376A;
+    --md-typeset-color:  #4e4e4e;
     --md-typeset-a-color: #7B0E72;
 
 }
 
+/* Font size and line height */
 body {
  font-size:1rem;
 }
 
 .md-typeset {
- font-size:1rem;
- line-height:1.6
+ font-size:0.8rem;
+ line-height:1.5
 }
 
 .md-typeset blockquote,
@@ -32,19 +37,21 @@ body {
  margin-top:1em
 }
 .md-typeset h1 {
- color:var(--md-default-fg-color--light);
+ color:var(--md-default-fg-color);
  font-size:2em;
- line-height:1.3;
- margin:0 0 1.25em
+ font-weight: bold;
+ line-height:1.1;
+ margin:0 0 1em
 }
 .md-typeset h1,
 .md-typeset h2 {
- font-weight:300;
  letter-spacing:-.01em
 }
 .md-typeset h2 {
+ color:var(--md-default-fg-color--light);   
  font-size:1.5625em;
- line-height:1.4;
+ font-weight:400;
+ line-height:1.2;
  margin:1.6em 0 .64em
 }
 .md-typeset h3 {
@@ -73,3 +80,46 @@ body {
 .md-typeset h5 {
  text-transform:uppercase
 }
+
+/* Github table style - from https://blog.ktz.me/making-mkdocs-tables-look-like-github-markdown-tables */
+th, td {
+    border: 1px solid var(--md-typeset-table-color);
+    border-spacing: 0;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+}
+
+.md-typeset__table {
+    line-height: 1;
+}
+
+.md-typeset__table table:not([class]) {
+    font-size: .74rem;
+    border-right: none;
+}
+
+.md-typeset__table table:not([class]) td,
+.md-typeset__table table:not([class]) th {
+    padding: 9px;
+}
+
+/* light mode alternating table bg colors */
+.md-typeset__table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+/* dark mode alternating table bg colors */
+[data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
+    background-color: hsla(var(--md-hue),25%,25%,1)
+}
+
+
+/* fix table width to 100% - see https://github.com/squidfunk/mkdocs-material/issues/175 */
+.md-typeset__table {
+    min-width: 100%;
+ }
+ 
+ .md-typeset table:not([class]) {
+     display: table;
+ }

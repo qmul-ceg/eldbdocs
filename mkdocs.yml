@@ -3,11 +3,11 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    - navigation.tabs
-    # - navigation.sections
-    - navigation.path
-    # - toc.integrate
-    - navigation.top
+    - navigation.tabs # page headers displayed in nav sidebar
+    - navigation.sections #  page headers displayed in nav sidebar
+    - navigation.path # displays a breadcrumb path to the current page
+    # - toc.integrate # integrate the table of contents into the nav sidebar
+    # - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -21,8 +21,9 @@ theme:
   font:
     text: Source Sans 3
     code: Source Code Pro
-  logo: img/logos/CEG_logo_white3.png
-  favicon: img/logos/CEG_logo_sq.png
+  # logo: img/logos/CEG_logo_white3.png
+  favicon: img/logos/QMUL_purple.jpg
+docs_dir: docs
 
 watch:
   - overrides

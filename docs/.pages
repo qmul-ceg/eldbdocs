@@ -1,23 +1,25 @@
 nav:
     - Home: index.md
     - Connecting:
-        - Connect_Overview.md
+        - Overview: Connect_Overview.md
         - CEG VPN:
-            - Connect_CEG-VPN_Setup.md
-            - Connect_CEG-VPN_Login.md
+            - Install & Setup: Connect_CEG-VPN_Setup.md
+            - Logging onto VPN: Connect_CEG-VPN_Login.md
         - ELDB Server:
-            - Connect_ELDB_Password.md
-            - Connect_SQL_Clients.md            
-            - Connect_ODBC_DSN.md
-            - Connect_MS_Access.md  
-            - Connect_PowerQuery.md
-            - Connect_SQLCMD.md
-            - Connect_RStudio.md
-            - Connect_Troubleshooting.md            
-    - Data Information:
-        - Data_Structure_Info.md
-        - Data_Lookup.md
-        - Data_Core.md
-        - Data_Registers.md
-    - Website Information:
-        - 'Website_Types of Website.md'
+            - ELDB Authentication: Connect_ELDB_Password.md
+        - Application Connection:
+            - SQL Clients: Connect_SQL_Clients.md            
+            - ODBC & DSN Setup: Connect_ODBC_DSN.md
+            - Microsoft Access: Connect_MS_Access.md  
+            - PowerQuery (Excel & Power BI): Connect_PowerQuery.md
+            - SQLCMD: Connect_SQLCMD.md
+            - R & RStudio: Connect_RStudio.md
+        - Troubleshooting: 
+            - Potential Issues: Connect_Troubleshooting.md   
+    - Data Dictionary:
+        - Database Schema: Data_Structure_Info.md
+        - Lookup Tables: Data_Lookup.md
+        - Core (Main Patient Table): Data_Core.md
+        - Registers: Data_Registers.md
+    - Other Information:
+        - This Website: 'Website_Types of Website.md'

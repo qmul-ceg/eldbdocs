@@ -95,7 +95,7 @@ earliest_code | SNOMED concept id for earliest code
 earliest_name | code term for earliest code
 
 ***
-## Chronic Obstructive Pulmonary Disease: `copd`
+## `copd` (Chronic Obstructive Pulmonary Disease)
 COPD code (COPD_COD) excluding patients with a more recent resolved code (COPDRES_COD), and where patients have a previous resolved code (COPDRES_COD), COPD code (COPD_COD) after the latest resolved code (COPDRES_COD)
 
 fieldname     | description
@@ -105,16 +105,14 @@ earliest_code | SNOMED concept id for earliest code
 earliest_name | code term for earliest code
 
 ***
-## Dementia: `dementia`
+## `dementia`
 Dementia code (DEM_COD) recorded ever
 
 -   earliest_date -- earliest, ie diagnosis, date of code for register
 -   earliest_code -- SNOMED concept id for earliest code
 -   earliest_name -- code term for earliest code
 
-## Depression
-
-**depression**
+## `depression`
 *Aged \>= 18 years, and Depression code (DEPR_COD) recorded \>= 2006-04-01 excluding patients with a more recent resolved code
 (DEPRES_COD)*
 
@@ -125,8 +123,7 @@ Dementia code (DEM_COD) recorded ever
 -   latest_code -- SNOMED concept id for latest code
 -   latest_name -- code term for latest code
 
-## Diabetes Mellitus (DM)
-**diabetes**
+## `diabetes` (Diabetes Mellitus / DM)
 *Aged \>= 18 years, and Diabetes code (DM_COD) excluding patients with a more recent resolved code (DMRES_COD). Selecting most recent Diabetes Type code (DMTYPE1_COD, DMTYPE2_COD) to define diabetes type.*
 
 -   earliest_date -- earliest, ie diagnosis, date of code for register
@@ -134,8 +131,7 @@ Dementia code (DEM_COD) recorded ever
 -   earliest_name -- code term for earliest code
 -   dm_type - diabetes type (TYPE_1 or TYPE_2) for each patient.
 
-## Eating Disorder
-**eating_disorder**
+## `eating_disorder`
 *Eating disorder code (EATINGDIS_CEG) recorded \>= last 24 months*
 
 -   latest \_date -- latest date of code for register
@@ -150,8 +146,7 @@ Epilepsy code (EPIL_COD) excluding patients with a more recent resolved code (EP
 -   earliest_code -- SNOMED concept id for earliest code
 -   earliest_name -- code term for earliest code
 
-## Familial Hypercholesteremia (FH)
-**f_hypercholesterolemia**
+## `f_hypercholesterolemia` (Familial Hypercholesteremia /FH)
 Familial Hypercholestelemia code (FHYP_COD) recorded ever
 
 -   earliest_date -- earliest, ie diagnosis, date of code for register
