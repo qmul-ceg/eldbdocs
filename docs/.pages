@@ -1,7 +1,8 @@
 nav:
     - Home: index.md
     - Connecting:
-        - Overview: Connect_Overview.md
+        - Overview:
+            - Connection Overview: Connect_Overview.md
         - CEG VPN:
             - Install & Setup: Connect_CEG-VPN_Setup.md
             - Logging onto VPN: Connect_CEG-VPN_Login.md
@@ -15,11 +16,15 @@ nav:
             - SQLCMD: Connect_SQLCMD.md
             - R & RStudio: Connect_RStudio.md
         - Troubleshooting: 
-            - Potential Issues: Connect_Troubleshooting.md   
-    - Data Dictionary:
-        - Database Schema: Data_Structure_Info.md
-        - Lookup Tables: Data_Lookup.md
-        - Core (Main Patient Table): Data_Core.md
-        - Registers: Data_Registers.md
-    - Other Information:
-        - This Website: 'Website_Types of Website.md'
+            - Potential Issues: Connect_Troubleshooting.md
+    - Data
+        - Data Information:
+            - Data Overview: Data_Overview.md
+            - Known Issues: Data_Know_Issues.md
+        - Data Dictionary:
+            - DD Info Tables: Data_Structure_Info.md
+            - Lookup Tables: Data_Lookup.md
+            - Core (Main Patient Table): Data_Core.md
+            - Register Tables: Data_Registers.md
+    - Other Info:
+        - This Website: Other_Website.md
