@@ -9,13 +9,13 @@ nav:
         - ELDB Server:
             - ELDB Authentication: Connect_ELDB_Password.md
         - Application Connection:
-            - SQL Clients: Connect_SQL_Clients.md            
+            - SQL Clients: Connect_SQL_Clients.md
             - ODBC & DSN Setup: Connect_ODBC_DSN.md
             - Microsoft Access: Connect_MS_Access.md  
             - PowerQuery (Excel & Power BI): Connect_PowerQuery.md
             - SQLCMD: Connect_SQLCMD.md
             - R & RStudio: Connect_RStudio.md
-        - Troubleshooting: 
+        - Troubleshooting:
             - Potential Issues: Connect_Troubleshooting.md
     - Data
         - Data Information:
@@ -27,4 +27,5 @@ nav:
             - Core (Main Patient Table): Data_Core.md
             - Register Tables: Data_Registers.md
     - Other Info:
-        - This Website: Other_Website.md
+        - Website:
+            - This Website: Other_Website.md
