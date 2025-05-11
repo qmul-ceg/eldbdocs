@@ -1,4 +1,7 @@
-# Data Overview
+---
+publish: "true"
+---
+## Database Overview
 The East London Database is a series of annual databases containing data from the 1st April for patients registered with GP practices within north east London on that date. The coverage has expanded over the years to now include all practices in the North East London ICB area (City & Hackney, Newham, Tower Hamlets, Waltham Forest, Redbridge, Barking & Dagenham, and Havering).
 
 - eldb2014 – eldb2019: contain data obtained from EMIS for inner east London. Hosted in MS Access and not currently available to external analysts.

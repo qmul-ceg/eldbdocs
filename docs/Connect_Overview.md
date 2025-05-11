@@ -1,3 +1,6 @@
+---
+publish: "true"
+---
 # Overview
 The East London Database is a series of annual databases containing data from the 1<sup>st</sup> April for patients registered with GP practices on that date. Full details of the included tables, the build business logic and commentary on how the data can be used are provided in a ‘Data and Schema’ document for the specific database. This guide provides information for connecting to the ELDB Server and to specific ELDB databases in order to conduct analyses.
 

@@ -1,3 +1,6 @@
+---
+publish: "true"
+---
 # CEG-VPN Setup
 
 ## Your ovpn Key File

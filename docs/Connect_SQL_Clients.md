@@ -1,3 +1,6 @@
+---
+publish: "true"
+---
 # SQL Clients
 
 The ELDB Server can be accessed directly using any SQL client software with capabilities for connect to Microsoft SQL Server. 

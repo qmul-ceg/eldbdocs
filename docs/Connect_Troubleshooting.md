@@ -1,3 +1,6 @@
+---
+publish: "true"
+---
 # Troubleshooting
 
 ## OpenVPN works but I can’t connect to the ELDB Server

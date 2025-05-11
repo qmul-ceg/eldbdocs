@@ -1,3 +1,6 @@
+---
+publish: "true"
+---
 # CEG-VPN Login
 ## Connecting to CEG-VPN
 

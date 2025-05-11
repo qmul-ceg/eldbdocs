@@ -1,3 +1,6 @@
+---
+publish: "true"
+---
 # ODBC Driver & DSN
 
 A Data Source Name (DSN) holds the connection information required for a data client on Windows to connect with a data source – in this case the ELDB Server. It specifies the ODBC driver to use and the server address. Both MS Access and Power Query (Excel and Power BI) use a DSN to connect to the ELDB server.

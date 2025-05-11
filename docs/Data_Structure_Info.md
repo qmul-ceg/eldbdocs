@@ -1,3 +1,6 @@
+---
+publish: "true"
+---
 # Database Information
 
 All ELDB databases are primarily based on a star schema consisting of a central CORE table, containing every registered patient (1 line per

@@ -1,3 +1,6 @@
+---
+publish: "true"
+---
 # Power Query
 
 Power Query is a data preparation application integrated into many of Microsoft data products, most notably Excel 2016+ and Power BI. Similar to Microsoft Access, it is possible to link tables within an East London Database using an ODBC driver within a user DSN. This should be setup to not download or copy the data to your device.

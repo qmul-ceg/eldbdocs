@@ -1,3 +1,6 @@
+---
+publish: "true"
+---
 # ELDB Server Password
 ## Your ELDB Server Username and Password
 CEG will provide you with a csv file containing the access and authentication details for the ELDB server. These are the credentials that will need to enter into the application that you use to query the ELDB data (eg SSMS, MS Access, R etc). The csv file will be sent to you separate from the CEG-VPN credentials. These credentials consist of:

@@ -1,3 +1,6 @@
+---
+publish: "true"
+---
 # R and RStudio
 
 To connect to the SQL server in R you will need the following libraries installed:

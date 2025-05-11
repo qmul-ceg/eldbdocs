@@ -1,6 +1,9 @@
-# CORE
+---
+publish: "true"
+---
+## CORE Overview
 The `CORE` table is the central table of the database, holding the details of all patients registered with a NEL GP Practice on the run date.
-
+***
 ## CORE Table: `CORE`
 Regular registration with a start date prior to the run date and an end date NULL or after the run date, at a currently active GP Practice, excluding patients with Date of Death \>= run date or with a record indicating patient has died, or is identifiable*[^1] *by patient's name as a Dummy/Test patient, or aged \>= 120 years.
 

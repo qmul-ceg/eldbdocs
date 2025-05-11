@@ -17,7 +17,7 @@ nav:
             - R & RStudio: Connect_RStudio.md
         - Troubleshooting:
             - Potential Issues: Connect_Troubleshooting.md
-    - Data
+    - Data:
         - Data Information:
             - Data Overview: Data_Overview.md
             - Known Issues: Data_Know_Issues.md

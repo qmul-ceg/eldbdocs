@@ -10,9 +10,10 @@
     --md-accent-fg-color:  #7B0E72;
 
     --md-default-fg-color:  #21376A;
-    --md-default-fg-color--light:  #0c746a; /*#0c746a; /*#1F7791;*/
+    --md-default-fg-color--light: #0c746a; /*#0c746a; /*#1F7791;*/
 
     --md-typeset-color:  #4e4e4e;
+    --md-typeset-colorh:  #999999;   
     --md-typeset-a-color: #7B0E72;
 
 }
@@ -20,6 +21,7 @@
 /* Font size and line height */
 body {
  font-size:1rem;
+ margin-top:0 /*1em*/
 }
 
 .md-typeset {
@@ -33,11 +35,12 @@ body {
 .md-typeset ol,
 .md-typeset pre,
 .md-typeset ul {
- margin-bottom:1em;
- margin-top:1em
+ margin-bottom:0; /*1em;*/
+ margin-top:0 /*1em*/
 }
 .md-typeset h1 {
- color:var(--md-default-fg-color);
+ color:var(--md-typeset-colorh);   
+ /*color:var(--md-default-fg-color);*/
  font-size:2em;
  font-weight: bold;
  line-height:1.1;
@@ -55,14 +58,15 @@ body {
  margin:1.6em 0 .64em
 }
 .md-typeset h3 {
+ color:var(--md-default-fg-color--light);
  font-size:1.25em;
  font-weight:400;
  letter-spacing:-.01em;
- line-height:1.5;
- margin:1.6em 0 .8em
+ line-height:0; /*1.0;*/
+ margin:1.0em 0 .3em /*.8em */
 }
 .md-typeset h2+h3 {
- margin-top:.8em
+ margin-top: .5em
 }
 .md-typeset h4 {
  font-weight:700;
