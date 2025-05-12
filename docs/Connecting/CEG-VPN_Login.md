@@ -1,5 +1,6 @@
 ---
-publish: "true"
+title: "VPN_Login"
+publish: "draft"
 ---
 # CEG-VPN Login
 ## Connecting to CEG-VPN

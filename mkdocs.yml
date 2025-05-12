@@ -7,7 +7,10 @@ theme:
     - navigation.sections #  page headers displayed in nav sidebar
     - navigation.path # displays a breadcrumb path to the current page
     # - toc.integrate # integrate the table of contents into the nav sidebar
-    # - navigation.top
+    - navigation.top
+    - navigation.indexes
+    - nvigation.instant
+    - nvigation.instant.progress
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -32,17 +35,17 @@ extra_css:
 
 plugins:
   - search
-  - awesome-pages
-  - pub-meta:
-      publish:
-        file_default: true
+  - awesome-nav
+  # - pub-meta:
+  #     publish:
+  #       file_default: true
   - pub-obsidian:
-      obsidian_dir: .obsidian
-      templates_dir: _templates
-      backlinks:
-        enabled: true
-      links:
-        wikilinks_enabled: true
+      # obsidian_dir: .obsidian
+      # templates_dir: _templates
+      # backlinks:
+      #   enabled: true
+      # links:
+      #   wikilinks_enabled: true
 
 markdown_extensions:
   - pymdownx.betterem # improved md formatting

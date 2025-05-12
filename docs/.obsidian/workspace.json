@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2f7b405be7eca0d5",
+        "id": "3e503636339c320a",
         "type": "tabs",
         "children": [
           {
-            "id": "e852fa639d569d7f",
+            "id": "1baef12718f88462",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data_Registers.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Data_Registers"
+              "title": "New tab"
             }
           }
         ]
@@ -169,30 +165,38 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e852fa639d569d7f",
+  "active": "1baef12718f88462",
   "lastOpenFiles": [
+    "Connecting/SQL_Clients.md",
+    "Connecting/ELDB_Password.md",
+    "Connecting/Overview.md",
+    "Connecting/RStudio.md",
+    "Connecting/PowerQuery.md",
+    "Connecting/ODBC_DSN.md",
+    "Connecting/CEG-VPN_Login.md",
+    "Connecting/CEG-VPN_Setup.md",
+    "Connecting/Troubleshooting.md",
+    "Connecting/SQLCMD.md",
+    "Connecting/MS_Access.md",
+    "Data_Registers.md",
+    "Data/Data_Structure_Info.md",
+    "Data/Data_Registers.md",
+    "Data/Data_Overview.md",
+    "Data/Data_Lookup.md",
+    "Data/Data_Know_Issues.md",
+    "Data/Data_Core.md",
+    "Connect_CEG-VPN_Setup.md",
+    "Data",
+    "Connecting",
+    "Other_Info/Other_Website.md",
+    "Other_Info",
+    "Other  Info/Other_Website.md",
+    "Other  Info",
     "Data_Lookup.md",
     "index.md",
     "Other_Website.md",
     "Connect_CEG-VPN_Login.md",
-    "Connect_CEG-VPN_Setup.md",
     "Connect_ELDB_Password.md",
-    "Connect_MS_Access.md",
-    "Connect_ODBC_DSN.md",
-    "Connect_Overview.md",
-    "Connect_PowerQuery.md",
-    "Connect_RStudio.md",
-    "Connect_SQL_Clients.md",
-    "Connect_SQLCMD.md",
-    "Connect_Troubleshooting.md",
-    "Data_Core.md",
-    "Data_Know_Issues.md",
-    "Data_Structure_Info.md",
-    "Data_Registers.md",
-    "Data_Overview.md",
-    "_templates",
-    "docs/Data_Overview.md",
-    "docs/Data_Core.md",
-    "Welcome.md"
+    "_templates"
   ]
 }
