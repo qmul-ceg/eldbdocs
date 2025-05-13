@@ -35,7 +35,8 @@ extra_css:
 
 plugins:
   - search
-  - awesome-nav
+  - awesome-nav:
+      filename: nav.yml # renamed so it appears in Obsidian (with VSCode Editor plugin)
   # - pub-meta:
   #     publish:
   #       file_default: true
