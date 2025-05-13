@@ -1,0 +1,49 @@
+nav:
+    - Home: index.md
+    - Connecting:
+        - Overview:
+            - Connection Overview: Connecting/VPN_Overview.md
+        - CEG VPN:
+            - Required Software: Connecting/Required_Software.md
+            - Setting Up CEG-VPN3 Access: Connecting/Setting_Up_VPN_Access.md
+            - Connecting to CEG-VPN3: Connecting/VPN_Connection.md
+        - ELDB Server:
+            - ELDB Authentication: Connecting/ELDB_Password.md
+        - Application Connection:
+            - SQL Clients: Connecting/Clients/SQL_Clients.md
+            - ODBC & DSN Setup: Connecting/Clients/ODBC_DSN.md
+            - Microsoft Access: Connecting/Clients/MS_Access.md  
+            - PowerQuery (Excel & Power BI): Connecting/Clients/PowerQuery.md
+            - SQLCMD: Connecting/Clients/SQLCMD.md
+            - R & RStudio: Connecting/Clients/RStudio.md
+        - Troubleshooting:
+            - Potential Issues: Connecting/Troubleshooting.md
+            - Viewing VPN Log: Connecting/View_Log.md
+    - Database:
+        - Data Overview: Database/Overview.md
+        - Known Issues: Database/Known_Issues.md
+        - Version Log: Database/Version.md
+    - Data:
+        - Database Info & Lookup:
+            - Database Info Tables: Data/Structure_Info.md
+            - Lookup Tables: Data/Lookup.md
+        - Conditions & Measures:
+            - Core (Main Patient Table): Data/Core.md
+            - Register Tables: Data/Registers.md
+            - Measure Tables: Data/Measures.md
+        - Medications:
+            - Prescription Tables: Data/Prescriptions.md
+            - Vaccination Tables: Data/Vaccinations.md
+        - Checks & Screening:
+            - NHS Health Check Tables: Data/NHS_Health_Checks.md
+            - Screening Tables: Data/Screening_&_Checks.md
+        - Lifestyle:
+            - Smoking, Alcohol & Drug Use: Data/Smoking_Alcohol_&_Drugs.md
+            - Alcohol Units per Week Calculation: Data/Alcohol_Units_Per_Week.md            
+            - Sexual Health: Data/Sexual_Health.md
+            - Lifestyle Status: Data/Lifestyle.md
+    - Other Information:
+        - Website:
+            - This Website: Other_Info/Website.md
+            - Website Updates: Other_Info/Updates.md
+            - Contact: Other_Info/Contact.md

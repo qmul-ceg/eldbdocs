@@ -1,0 +1,8 @@
+## Updates
+
+| Date       | Version | Information                                                                                                                                                                                                                                              |
+| ---------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 19/06/2023 | 1       | Document Created                                                                                                                                                                                                                                         |
+| 01/09/2023 | 2       | Added information on Azure Data Studio  <br>Added information on Power Query  <br>Added Password section  <br>Revised the Overview section  <br>Removed the Table of Contents, as too difficult to maintain  <br>Various formatting and typo corrections |
+| 31/10/2023 | 3       | Added connecting to SQL server through R                                                                                                                                                                                                                 |
+| 01/08/2024 | 4       | Updated and improved the Overview  <br>Amended Setting Up an ODBC User DSN to emphasise that DSNs can be reused for different databases on the server.  <br>Expanded the Troubleshooting section                                                         |

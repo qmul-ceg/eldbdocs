@@ -11,9 +11,9 @@ SQL Server Management Studio (SSMS) is the SQL client provided by Microsoft. It 
 
 All required drivers are installed with the application. A DSN is NOT required.
 
-Open SSMS and select *Connect Object Explorer…* from either the File menu or the ![](../_img/Connecting/SSMS_connection_button.png) icon at the top of the Object Explorer panel. A login window will appear. Enter the ELDB access credentials that you have been given and click *Connect*.
+Open SSMS and select *Connect Object Explorer…* from either the File menu or the ![](SSMS_connection_button.png) icon at the top of the Object Explorer panel. A login window will appear. Enter the ELDB access credentials that you have been given and click *Connect*.
 
-![SSMS login](../_img/Connecting/SSMS_login.png)
+![SSMS login](SSMS_login.png)
 
 ## Azure Data Studio (ADS)
 
