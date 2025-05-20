@@ -1,4 +1,5 @@
-# Appendix 1: Alcohol Units Per Week
+# Alcohol
+## Alcohol Units Per Week
 
 Units per week calculated from an units value and multiplier, both
 derived from latest_units text.

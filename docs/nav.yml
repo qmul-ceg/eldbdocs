@@ -43,7 +43,7 @@ nav:
             - Sexual Health: Data/Sexual_Health.md
             - Lifestyle Status: Data/Lifestyle.md
     - Analysis:
-        - Alcohol Analysis/Alcohol.md
+        - Alcohol: Analysis/Alcohol.md
         - Blood Pressure: Analysis/Blood_Pressure.md
         - Cancer Screening: Analysis/Cancer_Screening.md
         - Household: Analysis/Household.md
@@ -54,3 +54,4 @@ nav:
             - This Website: Other/Website.md
             - Website Updates: Other/Updates.md
             - Contact: Other/Contact.md
+            - Testing: Other/Testing.md

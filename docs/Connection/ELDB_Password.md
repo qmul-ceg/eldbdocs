@@ -28,7 +28,7 @@ Password generators are available online, including:
 <https://diceware.dmuth.org/>
 
 ### Changing your Password using SQL
-This is the simplest method, if you have an [SQL client](Connection/Clients/SQL_Clients.md) (SSMS, ADS, DBeaver etc) that is connected to the ELDB Server. Even if you don’t use SQL for data querying, it may be useful to have a SQL client connection specifically for this purpose.
+This is the simplest method, if you have an [SQL client](/Connection/Clients/SQL_Clients.md) (SSMS, ADS, DBeaver etc) that is connected to the ELDB Server. Even if you don’t use SQL for data querying, it may be useful to have a SQL client connection specifically for this purpose.
 
 In the SQL client, create a new query and enter:
 ```sql
