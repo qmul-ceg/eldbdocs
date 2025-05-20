@@ -1,6 +1,3 @@
----
-publish: "true"
----
 ## CORE Overview
 The `CORE` table is the central table of the database, holding the details of all patients registered with a NEL GP Practice on the run date.
 ***

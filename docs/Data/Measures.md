@@ -130,7 +130,7 @@ SNOMED code indicating a Blood Pressure activity, to which a Systolic and Diasto
 3. Systolic matched to only diastolic recorded on the same date
 4. Systolic matched to diastolic based ranked date and record id
 
-For full information see [Analysis: Blood Pressure](../Analysis/Blood_Pressure)
+For full information see [Analysis: Blood Pressure](../Analysis/Blood_Pressure.md)
 ### Pulse Rate 
 *Pulse Rate code (PLSRATE_COD)*
 

@@ -18,5 +18,5 @@ The blood pressure codes are matched, therefore, using 4 algorithms:
 
 Matched records in which either the systolic or diastolic value is NULL are removed and the remaining records are ranked by date and the systolic record id to find the latest record.
 
-The blood pressures in the `measures_blood` table are therefore the blood pressures readings for which it is possible to define a systolic/diastolic value. Readings with NULL and missing values have been filtered out.  The `bpparent_code` and `bpparent_name` fields provide the code where a parent code was used in the match. The `match_algorithm` column provides the number of the algorithm used for the match, as shown above.  Details provided in [Measures: Blood Pressure](/Data/Measures/#Blood-Pressure-BP).
+The blood pressures in the `measures_blood` table are therefore the blood pressures readings for which it is possible to define a systolic/diastolic value. Readings with NULL and missing values have been filtered out.  The `bpparent_code` and `bpparent_name` fields provide the code where a parent code was used in the match. The `match_algorithm` column provides the number of the algorithm used for the match, as shown above.  Details provided in [Measures: Blood Pressure](../Data/Measures.md#Blood-Pressure-BP).
 

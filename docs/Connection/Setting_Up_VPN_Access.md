@@ -18,7 +18,7 @@ The zip file contains the following files:
 These files will enable you to setup a connection to the CEG-VPN3 using a VPN client (OpenVPN Client or Tunnelblick) + authentication using an OTP authorisation phone app (eg 2FAS, Microsoft Authenticator, Authy etc).  This is slightly different to the Duo Mobile 'PUSH' method that was used for CEG-VPN2, but will probably be familiar from other OTP authorisations.
 
 ## Setup your OTP authenticator
-You will need an [OTP Authenticator](/Connecting/Required_Software/#OTP-Authenticator) installed on your smart phone.  In your OTP app:
+You will need an [OTP Authenticator](../Connection/Required_Software.md/#OTP-Authenticator) installed on your smart phone.  In your OTP app:
 
 - Open the {USERNAME}.png file to display the QR code.
 - Follow the instructions specific to your OTP Authenticator app to add a new account or service using the QR code.
@@ -26,7 +26,7 @@ You will need an [OTP Authenticator](/Connecting/Required_Software/#OTP-Authenti
 - If wanted, edit the account or service name to a better description, eg "CEG-VPN3"
 
 ## Setup your VPN client
-You will need a [VPN Client](/Connecting/Required_Software/#VPN-Client) installed on your laptop or PC.
+You will need a [VPN Client](../Connection/Required_Software.md/#VPN-Client) installed on your laptop or PC.
 
 ### OpenVPN GUI
 #### Ensure that your OpenVPN GUI client is using OpenVPN v2.6
@@ -34,7 +34,7 @@ You will need a [VPN Client](/Connecting/Required_Software/#VPN-Client) installe
 - Half way down the tab is the OpenVPN information, eg "OpenVPN v2.6.13"
 	- If needed, download and install the latest version
 
-![OpenVPN-Version](/_img/Connect/VPN-OpenVPN_Settings_highlight.png)
+![OpenVPN-Version](../_img/Connect/VPN-OpenVPN_Settings_highlight.png)
 #### Import your ovpn file into OpenVPN GUI
 - Right-click on the OpenVPN try icon and select *Import File*.
 - Browse to your ovpn file and click *Open*.

@@ -28,7 +28,7 @@ Password generators are available online, including:
 <https://diceware.dmuth.org/>
 
 ### Changing your Password using SQL
-This is the simplest method, if you have an [SQL client](/Connection/Clients/SQL_Clients.md) (SSMS, ADS, DBeaver etc) that is connected to the ELDB Server. Even if you don’t use SQL for data querying, it may be useful to have a SQL client connection specifically for this purpose.
+This is the simplest method, if you have an [SQL client](../Connection/Clients/SQL_Clients.md) (SSMS, ADS, DBeaver etc) that is connected to the ELDB Server. Even if you don’t use SQL for data querying, it may be useful to have a SQL client connection specifically for this purpose.
 
 In the SQL client, create a new query and enter:
 ```sql
@@ -40,13 +40,13 @@ Note the single quotes around the new and old passwords. Run the query and check
 You will need to separately change any connection details in your applications to the new password.
 
 ### Changing your Password using MS Access
-This method requires that you have an [ODBC DSN](Connection/Clients/ODBC_DSN.md) set up for the ELDB Server for use in [Microsoft Access](Connection/Clients/MS_Access.md).
+This method requires that you have an [ODBC DSN](../Connection/Clients/ODBC_DSN.md) set up for the ELDB Server for use in [Microsoft Access](../Connection/Clients/MS_Access.md).
 
 - Create a new Access database and proceed in the same way as instructed below for linking ELDB tables to Access:
 - Select to connect to a SQL Server or an ODBC data source.
 - Select *Link the data source by creating a linked table* and select the DSN that you created for the ELDB Server under the Machine Data Source tab.
 <p markdown="span" align="center">
-![MS Access Setup](/_img/Connect/MSAccess_DSN.png)
+![MS Access Setup](../_img/Connect/MSAccess_DSN.png)
 </p>
 - In the SQL Server Login Pop Up, enter your old (or current) password and click _Options >>_ to display the additional settings.
 - Confirm that Database refers the right database.

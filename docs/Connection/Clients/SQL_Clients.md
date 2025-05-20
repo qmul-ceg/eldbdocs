@@ -11,9 +11,9 @@ SQL Server Management Studio (SSMS) is the SQL client provided by Microsoft. It 
 
 All required drivers are installed with the application. A DSN is NOT required.
 
-Open SSMS and select *Connect Object Explorer…* from either the File menu or the ![](/_img/Connect/SSMS_connection_button.png) icon at the top of the Object Explorer panel. A login window will appear. Enter the ELDB access credentials that you have been given and click *Connect*.
+Open SSMS and select *Connect Object Explorer…* from either the File menu or the ![](../../_img/Connect/SSMS_connection_button.png) icon at the top of the Object Explorer panel. A login window will appear. Enter the ELDB access credentials that you have been given and click *Connect*.
 
-![SSMS login](/_img/Connect/SSMS_login.png)
+![SSMS login](../../_img/Connect/SSMS_login.png)
 
 ## Azure Data Studio (ADS) / Visual Studio Code (VSCode)
 
@@ -25,11 +25,11 @@ The guide below is for Azure Data Studio, but the Visual Studio Code extension h
 
 Open ADS and select the top icon, *Connections*, from the lefthand sidebar. This will open the Connections panel. At the top of this panel, click on the left-hand icon (circled in red below) to create a *New Connection*.
 
-![ADS Connection](/_img/Connect/ADS_connection_SS.png)
+![ADS Connection](../../_img/Connect/ADS_connection_SS.png)
 
 The Connection panel will open on the right-hand side with the Connection Details section at the bottom.
 
-![ADS Panel](/_img/Connect/ADS_connection_panel.png)
+![ADS Panel](../../_img/Connect/ADS_connection_panel.png)
 
 - Change the *Authentication type* to ‘SQL Login’ and enter the ELDB credentials that you have been given in the *Server*, *User name* and _Password* sections. Tick *Remember password*.
 - *Database* can be set to a specific database, such as ‘eldb2024’ – this will set the connection to that specific database. Alternatively, *Database* can be left as ‘Default’ – this will set the connection to ELDB server, allowing you to see all the databases on the server. You will only be able to access, however, the databases to which you have been given the relevant permissions. See below for screenshots.
@@ -38,18 +38,18 @@ The Connection panel will open on the right-hand side with the Connection Detail
 - Click *Connect*
 
 If your password needs changing, the Change Password box will appear when you press *Connect* or when you select the *Database*. Choose a new password and *OK*. 
-![ADS Password](/_img/Connect/ADS_password.png)
+![ADS Password](../../_img/Connect/ADS_password.png)
 
 If you get a 'Connection error' warning, click *Enable trust server certificate*. This will set the *Trust server certificate* section in the Connection Details to ‘True’.
-![ADS Cert Error](/_img/Connect/ADS_trust_cert.png)
+![ADS Cert Error](../../_img/Connect/ADS_trust_cert.png)
  
 As explained above, connections using *Default* will display all the databases on the server. Connections made to a specific database will show just that database. You can set up multiple connections, of either type, and group them in the Connections panel. Below, each ELDB database has a separate connection under a ‘ELDB’ group.
 
-![ADS Databases](/_img/Connect/ADS_table_tree.png)
+![ADS Databases](../../_img/Connect/ADS_table_tree.png)
 
 Whereas a 'Default' connection displays all the available databases on the server.  In each case, the database expands to a list of schemas and system folders. The database tables can be found under the `dbo` schema.
 
-![ADS Databases](/_img/Connect/ADS_db_tree.png)
+![ADS Databases](../../_img/Connect/ADS_db_tree.png)
 
 ## DBeaver and Other SQL Clients
 
@@ -59,6 +59,6 @@ Open a connection wizard by clicking on the plug icon in the upper left corner o
 
 Enter your ELDB access credentials, including your newly created password. Click Finish.
 
-![DBeaver](/_img/Connect/DBeaver_connection.png)]
+![DBeaver](../../_img/Connect/DBeaver_connection.png)]
 
 DBeaver will assess the connection requirements and may request that a JDBC driver is installed. Click *OK* and the driver will be automatically downloaded and installed.

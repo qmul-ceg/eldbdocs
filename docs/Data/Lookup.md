@@ -112,6 +112,7 @@ The boundary changes in LSOA 2021 make it difficult to map to the LSOA 2011 base
 | itl2021_2_name | ITL2 2021 name                                                                                           |
 | itl2021_1      | International Territorial Level 1 code defined in 2021 (national region)                                 |
 | itl2021_1_name | ITL1 2021 name                                                                                           |
+
 Note that some LAD2023 breakdown into smaller LAU2021, which cause some duplication in the `lad2023` fields.  This is not the case, however, for authorities in London.
 
 ### `lu_ons`
