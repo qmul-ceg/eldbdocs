@@ -81,7 +81,7 @@ Supporting tables, such as keys for main table
 | area_id              | area/LAD identifier (London only)                                               |
 | area2_id             | area/LAD grouping identifier (North East London only)                           |
 
-The boundary changes in LSOA 2021 make it difficult to map to the LSOA 2011 based IMD 2019 scores and ranking.  See [lu_lsoa2021](#lu_lsoa2021) for more detail.  LSOA and IMD based on the patient's postcode are provided in [CORE](/Data/Core).
+The boundary changes in LSOA 2021 make it difficult to map to the LSOA 2011 based IMD 2019 scores and ranking.  See [lu_lsoa2021](#lu_lsoa2021) for more detail.  LSOA and IMD based on the patient's postcode are provided in [CORE](../Data/Core.md).
 
 | identifier | area                                     |
 | ---------- | ---------------------------------------- |

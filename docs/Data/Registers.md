@@ -42,7 +42,7 @@ Anxiety covers a range of Common Mental Health disorders, including:
 -   Post-Trauma Stress (PSTD)
 -   Occupation-related Stress
 
-For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](/Analysis/Mental_Health)
+For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](../Analysis/Mental_Health.md)
 
 ## `asthma`
 *Asthma code (AST_COD) excluding patients with a more recent resolved code (ASTRES_COD), and include Asthma Treatment meds code (ASTTRT_COD) recorded \>= last 12 months. (QOF)*
@@ -128,7 +128,7 @@ latest_date   | latest date of code for register
 latest_code   | SNOMED concept id for latest code
 latest_name   | code term for latest code
 
-For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](/Analysis/Mental_Health)
+For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](../Analysis/Mental_Health.md)
 
 ## `diabetes` (Diabetes Mellitus, DM)
 *Aged \>= 18 years, and Diabetes code (DM_COD) excluding patients with a more recent resolved code (DMRES_COD). Selecting most recent Diabetes Type code (DMTYPE1_COD, DMTYPE2_COD) to define diabetes type.*
@@ -149,7 +149,7 @@ latest_date   | latest date of code for register
 latest_code   | SNOMED concept id for latest code
 latest_name   | code term for latest code
 
-For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](/Analysis/Mental_Health)
+For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](../Analysis/Mental_Health.md)
 
 ## `epilepsy`
 *Epilepsy code (EPIL_COD) excluding patients with a more recent resolved code (EPILRES_COD), and include Epilepsy Drug meds code (EPILDRUG_COD) recorded \>= last 6 months*
@@ -322,7 +322,7 @@ latest_date   | latest date of code for register
 latest_code   | SNOMED concept id for latest code
 latest_name   | code term for latest code
 
-For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](/Analysis/Mental_Health)
+For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](../Analysis/Mental_Health.md)
 
 ## `psoriasis`
 *Psoriasis code (PSORIASIS_COD)*
@@ -354,7 +354,7 @@ lithium_latest_date   | latest, ie prescription, date of code for medication rec
 lithium_latest_code   | SNOMED concept id for latest code for medication recorded \>= last 6 months
 lithium_latest_name   | code term for latest code for medication recorded \>= last 6 months
 
-Severe Mental Illness (SMI) includes both schizophrenia and bipolar disorder and anyone on lithium who is not also coded having these conditions. For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](/Analysis/Mental_Health)
+Severe Mental Illness (SMI) includes both schizophrenia and bipolar disorder and anyone on lithium who is not also coded having these conditions. For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](../Analysis/Mental_Health.md)
 
 ## `sti` (Sexually Transmitted Infection, STD)
 *Sexually Transmitted Infection code (STI_COD)*
