@@ -38,7 +38,7 @@ body {
 .md-typeset pre,
 .md-typeset ul {
  margin-bottom:0; /*1em;*/
- margin-top:0 /*1em*/
+ margin-top:1 /*1em*/
 }
 
 .md-typeset ul {

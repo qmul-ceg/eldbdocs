@@ -11,23 +11,25 @@ SQL Server Management Studio (SSMS) is the SQL client provided by Microsoft. It 
 
 All required drivers are installed with the application. A DSN is NOT required.
 
-Open SSMS and select *Connect Object Explorer…* from either the File menu or the ![](SSMS_connection_button.png) icon at the top of the Object Explorer panel. A login window will appear. Enter the ELDB access credentials that you have been given and click *Connect*.
+Open SSMS and select *Connect Object Explorer…* from either the File menu or the ![](/_img/Connect/SSMS_connection_button.png) icon at the top of the Object Explorer panel. A login window will appear. Enter the ELDB access credentials that you have been given and click *Connect*.
 
-![SSMS login](SSMS_login.png)
+![SSMS login](/_img/Connect/SSMS_login.png)
 
-## Azure Data Studio (ADS)
+## Azure Data Studio (ADS) / Visual Studio Code (VSCode)
 
-Azure Data Studio is an open-source SQL client developed by Microsoft but available for all platforms (Windows, Mac, Linux). It has a greater focus on data querying and a more modern interface than SSMS. It is available for download from [Microsoft](<https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16&tabs=redhat-install%2Credhat-uninstall>). It is also automatically installed with SQL Server Management Studio.
+[Visual Studio Code (VSCode)](https://code.visualstudio.com/) is Microsoft's open-source Code Editor that uses Extensions to support a large range of programs, connections and activities.  The SQL Server extension enables VSCode to connect and query MSSQL. No DSN setup is required and VSCode installs without requiring admin rights.
 
-All required drivers are installed with the application. A DSN is NOT required.
+Azure Data Studio is an open-source SQL client developed by Microsoft from the VSCode SQL Server extension.  However, Microsoft are retiring Azure Data Studio **Feb 28th 2026** in favour of the Visual Studio Code extension. More details [here](https://learn.microsoft.com/en-us/azure-data-studio/whats-happening-azure-data-studio).
 
-Open SSMS and select the top icon, *Connections*, from the lefthand sidebar. This will open the Connections panel. At the top of this panel, click on the left-hand icon (circled in red below) to create a *New Connection*.
+The guide below is for Azure Data Studio, but the Visual Studio Code extension has a very similar interface.
 
-![ADS Connection](ADS_connection_SS.png)
+Open ADS and select the top icon, *Connections*, from the lefthand sidebar. This will open the Connections panel. At the top of this panel, click on the left-hand icon (circled in red below) to create a *New Connection*.
+
+![ADS Connection](/_img/Connect/ADS_connection_SS.png)
 
 The Connection panel will open on the right-hand side with the Connection Details section at the bottom.
 
-![ADS Panel](ADS_connection_panel.png)
+![ADS Panel](/_img/Connect/ADS_connection_panel.png)
 
 - Change the *Authentication type* to ‘SQL Login’ and enter the ELDB credentials that you have been given in the *Server*, *User name* and _Password* sections. Tick *Remember password*.
 - *Database* can be set to a specific database, such as ‘eldb2024’ – this will set the connection to that specific database. Alternatively, *Database* can be left as ‘Default’ – this will set the connection to ELDB server, allowing you to see all the databases on the server. You will only be able to access, however, the databases to which you have been given the relevant permissions. See below for screenshots.
@@ -36,20 +38,18 @@ The Connection panel will open on the right-hand side with the Connection Detail
 - Click *Connect*
 
 If your password needs changing, the Change Password box will appear when you press *Connect* or when you select the *Database*. Choose a new password and *OK*. 
-![ADS Password](ADS_password.png)
+![ADS Password](/_img/Connect/ADS_password.png)
 
 If you get a 'Connection error' warning, click *Enable trust server certificate*. This will set the *Trust server certificate* section in the Connection Details to ‘True’.
-![ADS Cert Error](ADS_trust_cert.png)
+![ADS Cert Error](/_img/Connect/ADS_trust_cert.png)
  
 As explained above, connections using *Default* will display all the databases on the server. Connections made to a specific database will show just that database. You can set up multiple connections, of either type, and group them in the Connections panel. Below, each ELDB database has a separate connection under a ‘ELDB’ group.
 
-![ADS Databases](ADS_table_tree.png)
+![ADS Databases](/_img/Connect/ADS_table_tree.png)
 
 Whereas a 'Default' connection displays all the available databases on the server.  In each case, the database expands to a list of schemas and system folders. The database tables can be found under the `dbo` schema.
 
-![ADS Databases](ADS_db_tree.png)
-
-ADS is a very feature rich application with specialised utilities available for install via Extensions module. The Notebooks module also allows for executable SQL scripts embedded within text documents. There are many resources available online that provide an overview of ADS and its utilities. [Microsoft Learn](<https://learn.microsoft.com/en-us/sql/azure-data-studio/what-is-azure-data-studio?view=sql-server-ver16>) provides a good starting point, with tutorials and how-to-guides. 
+![ADS Databases](/_img/Connect/ADS_db_tree.png)
 
 ## DBeaver and Other SQL Clients
 
@@ -59,6 +59,6 @@ Open a connection wizard by clicking on the plug icon in the upper left corner o
 
 Enter your ELDB access credentials, including your newly created password. Click Finish.
 
-![[DBeaver_connection.png]]
+![DBeaver](/_img/Connect/DBeaver_connection.png)]
 
 DBeaver will assess the connection requirements and may request that a JDBC driver is installed. Click *OK* and the driver will be automatically downloaded and installed.

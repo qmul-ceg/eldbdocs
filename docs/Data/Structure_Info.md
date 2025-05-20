@@ -3,9 +3,7 @@ publish: "true"
 ---
 # Database Information
 
-All ELDB databases are primarily based on a star schema consisting of a central CORE table, containing every registered patient (1 line per
-patient), linked by a patient identifier to multiple tables containing the details for patients found for specific Registers, Measures and
-Activities. Additional columns and Lookup tables are provided where useful to assist with classification and categorisation.
+All ELDB databases are primarily based on a star schema consisting of a central CORE table, containing every registered patient (1 line per patient), linked by a patient identifier to multiple tables containing the details for patients found for specific Registers, Measures and Activities. Additional columns and Lookup tables are provided where useful to assist with classification and categorisation.
 
 In eldb2024 the database schema, build history and design is set out in the following tables:
 

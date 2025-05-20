@@ -1,6 +1,6 @@
-# Connecting to CEG-VPN3
+# CEG-VPN Connection
 
-Ensure you have followed the instructions in [[Setting_Up_VPN_Access]].
+Ensure you have followed the instructions in [Setting Up CEG-VPN Access](Connection/Setting_Up_VPN_Access.md)
 ## OpenVPN GUI (Windows)
 Right-click the OpenVPN tray icon and click *Connect*.
 

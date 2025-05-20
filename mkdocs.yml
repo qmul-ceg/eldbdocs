@@ -41,12 +41,12 @@ plugins:
   #     publish:
   #       file_default: true
   - pub-obsidian:
-      # obsidian_dir: .obsidian
+      obsidian_dir: .obsidian
       # templates_dir: _templates
-      # backlinks:
-      #   enabled: true
-      # links:
-      #   wikilinks_enabled: true
+      backlinks:
+        enabled: true
+      links:
+        wikilinks_enabled: true
 
 markdown_extensions:
   - pymdownx.betterem # improved md formatting

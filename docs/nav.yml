@@ -1,24 +1,24 @@
 nav:
     - Home: index.md
-    - Connecting:
+    - Connection:
         - Overview:
-            - Connection Overview: Connecting/VPN_Overview.md
+            - Connection Overview: Connection/VPN_Overview.md
         - CEG VPN:
-            - Required Software: Connecting/Required_Software.md
-            - Setting Up CEG-VPN3 Access: Connecting/Setting_Up_VPN_Access.md
-            - Connecting to CEG-VPN3: Connecting/VPN_Connection.md
+            - Required Software: Connection/Required_Software.md
+            - Setting Up CEG-VPN Access: Connection/Setting_Up_VPN_Access.md
+            - CEG-VPN Connection: Connection/VPN_Connection.md
         - ELDB Server:
-            - ELDB Authentication: Connecting/ELDB_Password.md
+            - ELDB Authentication: Connection/ELDB_Password.md
         - Application Connection:
-            - SQL Clients: Connecting/Clients/SQL_Clients.md
-            - ODBC & DSN Setup: Connecting/Clients/ODBC_DSN.md
-            - Microsoft Access: Connecting/Clients/MS_Access.md  
-            - PowerQuery (Excel & Power BI): Connecting/Clients/PowerQuery.md
-            - SQLCMD: Connecting/Clients/SQLCMD.md
-            - R & RStudio: Connecting/Clients/RStudio.md
+            - SQL Clients: Connection/Clients/SQL_Clients.md
+            - ODBC & DSN Setup: Connection/Clients/ODBC_DSN.md
+            - Microsoft Access: Connection/Clients/MS_Access.md  
+            - PowerQuery (Excel & Power BI): Connection/Clients/PowerQuery.md
+            - SQLCMD: Connection/Clients/SQLCMD.md
+            - R & RStudio: Connection/Clients/RStudio.md
         - Troubleshooting:
-            - Potential Issues: Connecting/Troubleshooting.md
-            - Viewing VPN Log: Connecting/View_Log.md
+            - Potential Issues: Connection/Troubleshooting.md
+            - Viewing VPN Log: Connection/View_Log.md
     - Database:
         - Data Overview: Database/Overview.md
         - Known Issues: Database/Known_Issues.md
@@ -42,8 +42,15 @@ nav:
             - Alcohol Units per Week Calculation: Data/Alcohol_Units_Per_Week.md            
             - Sexual Health: Data/Sexual_Health.md
             - Lifestyle Status: Data/Lifestyle.md
+    - Analysis:
+        - Alcohol Analysis/Alcohol.md
+        - Blood Pressure: Analysis/Blood_Pressure.md
+        - Cancer Screening: Analysis/Cancer_Screening.md
+        - Household: Analysis/Household.md
+        - Mental Health: Analysis/Mental_Health.md
+        - NHS Health Checks: Analysis/NHS_Health_Checks.md
     - Other Information:
         - Website:
-            - This Website: Other_Info/Website.md
-            - Website Updates: Other_Info/Updates.md
-            - Contact: Other_Info/Contact.md
+            - This Website: Other/Website.md
+            - Website Updates: Other/Updates.md
+            - Contact: Other/Contact.md
