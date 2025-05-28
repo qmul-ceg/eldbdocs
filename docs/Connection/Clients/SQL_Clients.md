@@ -1,12 +1,8 @@
----
-publish: "true"
----
 # SQL Clients
 
 The ELDB Server can be accessed directly using any SQL client software with capabilities for connect to Microsoft SQL Server. 
 
 ## SQL Server Management Studio (SSMS)
-
 SQL Server Management Studio (SSMS) is the SQL client provided by Microsoft. It can be downloaded for free from [Microsoft](<https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15>).
 
 All required drivers are installed with the application. A DSN is NOT required.
@@ -15,13 +11,10 @@ Open SSMS and select *Connect Object Explorer…* from either the File menu or t
 
 ![SSMS login](../../_img/Connect/SSMS_login.png)
 
-## Azure Data Studio (ADS) / Visual Studio Code (VSCode)
-
-[Visual Studio Code (VSCode)](https://code.visualstudio.com/) is Microsoft's open-source Code Editor that uses Extensions to support a large range of programs, connections and activities.  The SQL Server extension enables VSCode to connect and query MSSQL. No DSN setup is required and VSCode installs without requiring admin rights.
-
+## Visual Studio Code (VSCode)
+[Visual Studio Code (VSCode)](https://code.visualstudio.com/) is Microsoft's open-source Code Editor that uses Extensions to support a large range of programs, connections and activities.  The SQL Server extension enables VSCode to connect and query MSSQL. No DSN setup is required and VSCode installs without requiring admin rights. The guide below is for Azure Data Studio, but the Visual Studio Code extension has a very similar interface.
+## Azure Data Studio (ADS)
 Azure Data Studio is an open-source SQL client developed by Microsoft from the VSCode SQL Server extension.  However, Microsoft are retiring Azure Data Studio **Feb 28th 2026** in favour of the Visual Studio Code extension. More details [here](https://learn.microsoft.com/en-us/azure-data-studio/whats-happening-azure-data-studio).
-
-The guide below is for Azure Data Studio, but the Visual Studio Code extension has a very similar interface.
 
 Open ADS and select the top icon, *Connections*, from the lefthand sidebar. This will open the Connections panel. At the top of this panel, click on the left-hand icon (circled in red below) to create a *New Connection*.
 
