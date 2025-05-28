@@ -165,10 +165,13 @@ Measurements of lung function.
 | mrc_latest_value | value associated to latest MRC code   |
 
 ## `measures_risk` (Risk related)
+Scores and indicators relating to clinical risk
 
 ### CHADSVASC (CHA~2~DS~2~VASc)
-Risk of Stroke in patients with non-rheumatic Atrial Fibrillation)
+Risk of Stroke in patients with non-rheumatic Atrial Fibrillation
 *CHADSVASC code (CHADVASC_COD)*
+
+
 
 | fieldname              | description                                   |
 | ---------------------- | --------------------------------------------- |
@@ -188,8 +191,8 @@ Risk of a CVD event within next 10 years
 | qrisk_latest_name  | code term for latest QRISK code         |
 | qrisk_latest_value | value associated to latest QRISK code   |
 
-### Frailty
 ### Clinical Frailty Score
+Assessment of overall fitness / frailty
 *Clinical Frailty Score code (CLINFRAILSCR_COD)*
 
 | fieldname                | description                                              |
@@ -200,6 +203,7 @@ Risk of a CVD event within next 10 years
 | frailty_cfs_latest_value | value associated to latest Clinical Frailty Score code   |
 
 ### Electronic Frailty Index
+Risk stratification of frailty calculated from patient record
 *Electronic Frailty Index code (FRAILEFI_CEG)
 
 | fieldname                | description                                                |
@@ -210,59 +214,14 @@ Risk of a CVD event within next 10 years
 | frailty_efi_latest_value | value associated to latest Electronic Frailty Index code   |
 
 ### Frailty Status
-*Frailty Status code (MILDFRAIL_COD, MODFRAIL_COD, SEVFRAIL_COD)*
+*Frailty Status code (MILDFRAIL_COD, MODFRAIL_COD, SEVFRAIL_COD)* ==status??==
 
-| fieldname                   | description                                                                                                |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| frailty_status_latest_date  | latest date of Frailty Status code                                                                         |
-| frailty_status_latest_code  | SNOMED concept id for latest Frailty Status code                                                           |
-| frailty_status_latest_name  | code term for latest Frailty Status code                                                                   |
-| frailty_status_latest_value | value associated to latest Frailty Status code                                                             |
-| frailty_status              | descriptor of frailty associated with<br>    frailty_status_latest_name using Rockwood Frailty Scale terms |
+| fieldname                   | description                                                         |
+| --------------------------- | ------------------------------------------------------------------- |
+| frailty_status_latest_date  | latest date of Frailty Status code                                  |
+| frailty_status_latest_code  | SNOMED concept id for latest Frailty Status code                    |
+| frailty_status_latest_name  | code term for latest Frailty Status code                            |
+| frailty_status_latest_value | value associated to latest Frailty Status code                      |
+| frailty_status              | Rockwood Frailty Scale term derived from frailty_status_latest_name |
 
--   frailty_status -- descriptor of frailty associated with
-    frailty_status_latest_name using Rockwood Frailty Scale terms
-### QDiabetes
-Risk of developing Type 2 Diabetes in next 10 years
-*QDiabetes code (QDIABETES_CEG)*
-
-
-| fieldname          | description                                  |
-| ------------------ | -------------------------------------------- |
-| mrc_latest_date  | latest date of MRC code               |
-| mrc_latest_code  | SNOMED concept id for latest MRC code |
-| mrc_latest_name  | code term for latest MRC code         |
-| mrc_latest_value | value associated to latest MRC code   |
-
-
-
-
--   frailty_efi_latest_value -- latest Electronic Frailty Index value
-    recorded
-
--   frailty_status_latest_date -- latest Frailty Status date of code for
-    measure
-
--   frailty_status_latest_code -- SNOMED concept id for latest Frailty
-    Status code
-
--   frailty_status_latest_name -- code term for latest Frailty Status
-    measure
-
--   frailty_status -- descriptor of frailty associated with
-    frailty_status_latest_name using Rockwood Frailty Scale terms
-
--   qdiabetes_latest_date -- latest QDiabetes value date of code for
-    meaure
-
--   qdiabetes_latest_code -- SNOMED concept id for latest QDiabetes code
-
--   qdiabetes_latest_name -- code term for latest QDiabetes measure
-
--   qdiabetes_latest_value -- latest QDiabetes value recorded
-
-The frailty_status column is a simpler frailty classifier column to use.
-It takes recorded code terms as registered and converts them into their
-equivalent term according to the Rockwood Frailty Scale. Those are: very
-fit, well, managing well, vulnerable, mildly frail, Moderately Frail,
-Severely Frail, Very Severely Frail, Terminally Ill.
+The `frailty_status` column simplifies the code term provided by the `fraility_status_latest_name` to provide a consistent Rockwood Frailty Scale term:

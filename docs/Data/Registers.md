@@ -4,7 +4,7 @@ publish: "true"
 # Register Tables
 ## Registers Overview
 
-The register tables contain all patients with a specified diagnosis or long term condition. 
+The register tables contain patients with a specified diagnosis or long term condition. 
 
 ### Common Fields
 Each table has the following fields:
@@ -268,14 +268,14 @@ earliest_name | code term for earliest code
 ## `obesity`
 *Aged \>= 18 years, and BMI Value code (BMIVAL_COD) \>=30 recorded \>= last 12 months, or Non-Value BMI Indicating \>= 30 code (BMI30_COD) recorded \>= last 12 months*
 
-fieldname     | description
-----------    |------------
-latest12m_date   | latest date of code for register in the last 12 months
-latest12m_code   | SNOMED concept id for latest code in the last 12 months
-latest12m_name   | code term for latest code in the last 12 months
-bmi30plus_latest12m_date   | latest date of code for register in the last 12 months with BMI \>=30
-bmi30plus_latest12m_code   | SNOMED concept id for latest code in the last 12 months with BMI \>=30
-bmi30plus_latest12m_name   | code term for latest code in the last 12 months with BMI \>=30
+| fieldname                | description                                                            |
+| ------------------------ | ---------------------------------------------------------------------- |
+| latest12m_date           | latest date of code for register in the last 12 months                 |
+| latest12m_code           | SNOMED concept id for latest code in the last 12 months                |
+| latest12m_name           | code term for latest code in the last 12 months                        |
+| bmi30plus_latest12m_date | latest date of code for register in the last 12 months with BMI \>=30  |
+| bmi30plus_latest12m_code | SNOMED concept id for latest code in the last 12 months with BMI \>=30 |
+| bmi30plus_latest12m_name | code term for latest code in the last 12 months with BMI \>=30         |
 
 ## `osteoporosis`
 *Osteoporosis code (OSTEO_COD)*
