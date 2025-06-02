@@ -1,6 +1,3 @@
----
-publish: "true"
----
 # Register Tables
 ## Registers Overview
 
@@ -9,13 +6,13 @@ The register tables contain patients with a specified diagnosis or long term con
 ### Common Fields
 Each table has the following fields:
 
-fieldname   | description
-----------  |------------
-label       | descriptive label of the table contents. Be 'diabetes'
-area_id     | area id for GP Practice
-ods_code    | ODS (Organisation Data Service) identifier for the GP Practice.
-person_id   | identifier of person
-patient_id  | identifier of patient at a practice
+| fieldname  | description                                                     |
+| ---------- | --------------------------------------------------------------- |
+| label      | descriptive label of the table contents. eg 'diabetes'          |
+| area_id    | area id for GP Practice                                         |
+| ods_code   | ODS (Organisation Data Service) identifier for the GP Practice. |
+| person_id  | identifier of person                                            |
+| patient_id | identifier of patient at a practice                             |
 
 ### Information format:
 
@@ -35,9 +32,10 @@ latest_code | SNOMED concept id for latest code
 latest_name | code term for latest code
 
 Anxiety covers a range of Common Mental Health disorders, including:
--   Generalised Anxiety and Panic Attacks
--   Anxiety associated with specific behaviours or situations
--   Phobias
+ 
+-   Generalised Anxiety and Panic Attacks	
+-   Anxiety associated with specific behaviours or situations	
+-   Phobias	
 -   Obsessive-Compulsive behaviour (OCD)
 -   Post-Trauma Stress (PSTD)
 -   Occupation-related Stress

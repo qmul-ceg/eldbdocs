@@ -4,7 +4,8 @@ theme:
   custom_dir: overrides
   features:
     - navigation.tabs # page headers displayed in nav sidebar
-    - navigation.sections #  page headers displayed in nav sidebar
+    - navigation.tabs.sticky # sticky page headers in nav sidebar
+    # - navigation.sections #  page headers displayed in nav sidebar
     - navigation.path # displays a breadcrumb path to the current page
     # - toc.integrate # integrate the table of contents into the nav sidebar
     - navigation.top

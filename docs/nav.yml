@@ -25,23 +25,24 @@ nav:
         - Version Log: Database/Version.md
     - Data:
         - Database Info & Lookup:
-            - Database Info Tables: Data/Structure_Info.md
+            - Database Info: Data/Structure_Info.md
             - Lookup Tables: Data/Lookup.md
-        - Conditions & Measures:
-            - Core (Main Patient Table): Data/Core.md
-            - Register Tables: Data/Registers.md
-            - Measure Tables: Data/Measures.md
+        - Core (Current Registered Patients): Data/Core.md
+        - Registers: Data/Registers.md
+        - Measures: Data/Measures.md
         - Medications:
-            - Prescription Tables: Data/Prescriptions.md
-            - Vaccination Tables: Data/Vaccinations.md
+            - Prescriptions: Data/Prescriptions.md
+            - Vaccinations: Data/Vaccinations.md
         - Checks & Screening:
-            - NHS Health Check Tables: Data/NHS_Health_Checks.md
-            - Screening Tables: Data/Screening_&_Checks.md
+            - NHS Health Checks: Data/NHS_Health_Checks.md
+            - Screening: Data/Screening_&_Checks.md
         - Lifestyle:
-            - Smoking, Alcohol & Drug Use: Data/Smoking_Alcohol_&_Drugs.md
+            - Smoking, Alcohol, Drugs: Data/Substances.md
             - Sexual Health: Data/Sexual_Health.md
-            - Lifestyle Status: Data/Lifestyle.md
+            - Needs & Status: Data/Needs_&_Status.md
+            - Accomodation: Data/Accommodation.md
     - Analysis:
+        - Analysis Overview: Analysis/Analysis_Overview.md
         - Alcohol: Analysis/Alcohol.md
         - Blood Pressure: Analysis/Blood_Pressure.md
         - Cancer Screening: Analysis/Cancer_Screening.md

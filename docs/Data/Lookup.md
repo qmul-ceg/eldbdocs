@@ -1,7 +1,3 @@
----
-publish: "true"
----
-
 # Lookup Tables
 The lookup tables (prefixed with `lu_`) contain code maps and categorisations to help with data analysis.
 ### Information format:

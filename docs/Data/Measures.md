@@ -7,13 +7,13 @@ The measure tables contain test results with values for all patients, split into
 ### Common Fields
 Each table has the following fields:
 
-fieldname   | description
-----------  |------------
-label       | descriptive label of the table contents. Be 'diabetes'
-area_id     | area id for GP Practice
-ods_code    | ODS (Organisation Data Service) identifier for the GP Practice.
-person_id   | identifier of person
-patient_id  | identifier of patient at a practice
+| fieldname  | description                                                     |
+| ---------- | --------------------------------------------------------------- |
+| label      | descriptive label of the table contents. eg 'diabetes'          |
+| area_id    | area id for GP Practice                                         |
+| ods_code   | ODS (Organisation Data Service) identifier for the GP Practice. |
+| person_id  | identifier of person                                            |
+| patient_id | identifier of patient at a practice                             |
 
 ### Information format:
 
