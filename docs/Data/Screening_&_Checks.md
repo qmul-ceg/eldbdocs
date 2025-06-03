@@ -100,15 +100,6 @@ latest_date   | latest date of code for register
 latest_code   | SNOMED concept id for latest code
 latest_name   | code term for latest code
 
-## `screen_diabetic_retinal_excepted`
-*Diabetic Retinal Screening Excepted code (RETEXEC_COD).*  
-
-fieldname     | description
-------------  |------------
-latest_date   | latest date of code for register
-latest_code   | SNOMED concept id for latest code
-latest_name   | code term for latest code
-
 ***
 ## `screen_pulse_check`
 *Pulse Check code (PULRHYTH_COD).*  

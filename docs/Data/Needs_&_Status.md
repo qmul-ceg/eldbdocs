@@ -33,7 +33,7 @@ Additional information
 | latest_name | code term for latest code         |
 
 ## `status_housebound`
-*Housebound code (HOUSEBOUND_COD).*
+*Housebound code (HOUSEBOUND_CEG).*
 
 | fieldname   | description                       |
 | ----------- | --------------------------------- |

@@ -15,7 +15,6 @@ Each table has the following fields:
 | patient_id | identifier of patient at a practice                             |
 
 ### Information format:
-
 **`table name` (full condition name, abbreviation)**  
 *The business rules syntax used to create the table with (CLUSTER ID)s and date ranges.*    
 Table of fieldnames + description specific to the table  
@@ -86,7 +85,7 @@ declinedint_latest_name    | code term for latest Alcohol Intervention Declined 
 *See Appendix 1: Alcohol Units Per Week*
 
 ## `substance_misuse`
-*Illicit Substance Abuse code (ILLSUB_COD), excluding patients with a more recent Non-Substance Misuser code (NONILLSUM_CEG).  
+*Illicit Substance Abuse code (ILLSUB_COD), excluding patients with a more recent Non-Substance Misuser code (NONILLSUB_CEG).  
 Includes Illegal Substance Use Intervention code (ILLSUBINT_COD).*
 
 fieldname         | description

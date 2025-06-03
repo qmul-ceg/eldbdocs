@@ -182,7 +182,7 @@ Risk of Stroke in patients with non-rheumatic Atrial Fibrillation
 
 ### QRISK
 Risk of a CVD event within next 10 years
-*QRISK code (QRISK2AND3SCORE_COD)* ==UPDATE==
+*QRISK code (QRISK2AND3SCORE_COD)*
 
 | fieldname          | description                             |
 | ------------------ | --------------------------------------- |
@@ -214,7 +214,7 @@ Risk stratification of frailty calculated from patient record
 | frailty_efi_latest_value | value associated to latest Electronic Frailty Index code   |
 
 ### Frailty Status
-*Frailty Status code (MILDFRAIL_COD, MODFRAIL_COD, SEVFRAIL_COD)* ==status??==
+*Frailty Status code (MILDFRAIL_COD, MODFRAIL_COD, SEVFRAIL_COD)*
 
 | fieldname                   | description                                                         |
 | --------------------------- | ------------------------------------------------------------------- |

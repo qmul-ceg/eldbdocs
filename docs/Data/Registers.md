@@ -355,7 +355,7 @@ lithium_latest_name   | code term for latest code for medication recorded \>= la
 Severe Mental Illness (SMI) includes both schizophrenia and bipolar disorder and anyone on lithium who is not also coded having these conditions. For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](../Analysis/Mental_Health.md)
 
 ## `sti` (Sexually Transmitted Infection, STD)
-*Sexually Transmitted Infection code (STI_COD)*
+*Sexually Transmitted Infection code (STI_CEG)*
 
 fieldname     | description
 ----------    |------------
