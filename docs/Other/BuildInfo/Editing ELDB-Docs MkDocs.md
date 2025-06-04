@@ -1,20 +1,17 @@
 # Editing ELDB-Docs MkDocs
 ## docs
 - All displayed ELDB-Docs content must in the `eldb-docs/docs` folder.
-	- `index.md`cannot be renamed or moved - contains Home page
-	- `.pages` cannot be renamed or moved - contains sidebar navigation
-	- images are stored in the `docs/img` folder under a suitable subfolder
-	- `.obsidian` shoud be ignored
+	- `eldb-docs/docs/index.md`cannot be renamed or moved - contains Home page
+	- `eldb-docs/docs/nav.yml` cannot be renamed or moved - contains sidebar navigation
+	- images are stored in the `eldb-docs/docs/img` folder under a suitable subfolder
+	- `eldb-docs/.obsidian` should be ignored
 ## overrides
 - CSS customisation is in `eldb-docs/overrides/assets/stylesheets/extra.css`
-## mkdoc.yml
-- contains site settings 
-
+## MkDocs Settings
+- MkDocs settings are in  `eldb-docs/mkdocs.yml`
 ## Page Structure
 An example page is provided below
-- YAML section - Each page is headed by a yaml section, defined by two "---" lines.  In Obsidian it is rendered as a *Properties* item.  This is not displayed in the website, but provides settings for deployment:
-	- `title:` The title of the page
-	- `publish:` Publish page on website - "true" = yes,  "hidden" = yes but not in navigation, "draft" = no.
+- YAML section - Each page is headed by a yaml section, defined by two "---" lines.  In Obsidian it is rendered as a *Properties* item.  This is not displayed in the website, but provides settings info.
 
 http://127.0.0.1:8000/ceg-vpn_login/
 
