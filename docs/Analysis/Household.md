@@ -1,4 +1,4 @@
-**Household**
+### Household
 
 The **status_household** table contains the residency for patients on  
 01/04/2024, as calculated using the ASSIGN algorithm developed by CEG in  
@@ -58,5 +58,3 @@ deterministic address-matching algorithm for allocating Unique
 Property Reference Numbers to general practitioner-recorded patient  
 addresses", *International Journal of Population Data Science*,  
 6(1). doi: <https://doi.org/10.23889/ijpds.v6i1.1674>
-
-
