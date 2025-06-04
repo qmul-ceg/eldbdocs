@@ -110,5 +110,5 @@ latest_date   | latest date of code for register
 latest_code   | SNOMED concept id for latest code
 latest_name   | code term for latest code
 pulse_type    | standardised descriptor of pulse type associated with latest_name (regular, irregular, irregularly irregular, unknown)
-> [!info]
+> [!quote] Note
 > Pulse Checks are done opportunistically, which means there is no declined coding as with other screening services.
