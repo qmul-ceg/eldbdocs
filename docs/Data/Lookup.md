@@ -74,8 +74,8 @@ Supporting tables, such as keys for main table
 | lad2023              | Local Authority District ONS code defined in 2023                               |
 | lad2023_name         | Local Authority District name                                                   |
 | imd2019_quintile_lad | IMD quintile by LAD                                                             |
-| area_id              | area/LAD identifier (London only)                                               |
-| area2_id             | area/LAD grouping identifier (North East London only)                           |
+| lad_id               | LAD identifier (London only)                                                    |
+| area_id              | area/LAD identifier (North East London only)                                    |
 
 The boundary changes in LSOA 2021 make it difficult to map to the LSOA 2011 based IMD 2019 scores and ranking.  See [lu_lsoa2021](#lu_lsoa2021) for more detail.  LSOA and IMD based on the patient's postcode are provided in [CORE](../Data/Core.md).
 

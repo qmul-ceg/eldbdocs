@@ -1,6 +1,14 @@
 ---
 publish: "true"
 ---
+
+
+
+
+
+
+
+
 # Known Data Issues
 ## Patient Registration
 A patient’s current practice registration and date, as shown in the CORE table, is calculated using the available registration data in Compass.  The EMIS API to DDS does not contain the full detailed registration process history which EMIS uses to refine its GP Practice Currently Registered list, particularly in relation to patients moving to or from a practice.  The practice lists in ELDB can therefore include patients that EMIS would define as having moved to another practice.  Listsizes with EMIS may differ by ±2%.
