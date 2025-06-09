@@ -1,11 +1,8 @@
----
-publish: "true"
----
 # Database Information
 
 All ELDB databases are primarily based on a star schema consisting of a central CORE table, containing every registered patient (1 line per patient), linked by a patient identifier to multiple tables containing the details for patients found for specific Registers, Measures and Activities. Additional columns and Lookup tables are provided where useful to assist with classification and categorisation.
 
-In eldb2024 the database schema, build history and design is set out in the following tables:
+The database schema, build history and design is set out in the following tables:
 
 ***
 
@@ -41,7 +38,7 @@ List of all columns within the database
 | is_index       | column is included within a table index           |
 | record_count   | count of record entries in column                 |
 
-## `db_clusters (code clusters in tables)
+## `db_clusters` (code clusters in tables)
 List of code clusters within the database
 
 | fieldname           | description                            |
@@ -81,7 +78,7 @@ create_time   | creation time
 modified_date | last modification date
 modified_time | last modification time
 
-## `db_codeset_ceg (CEG code clusters)
+## `db_codeset_ceg` (CEG code clusters)
 CEG code clusters
 
 | fieldname           | description                             |
@@ -97,11 +94,11 @@ CEG code clusters
 ## `db_counts` (row counts of tables)
 Patient counts by Practice for each Register and Activity table within the database.
 
-fieldname                                 | description
-----------                                |------------
-area_id                                   | area id for GP Practice
-ods_code                                  | ODS (Organisation Data Service) identifier for the GP Practice.
-practice_name                             | GP Practice name.
-clinical_system                           | clinical data system (EMIS, SystmOne) used within the GP Practice. This is based on information from CEG reporting.
-*column for each register/activity table* | patient count for table by GP Practice.
+| fieldname                                 | description                                                                                                         |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| area_id                                   | area id for GP Practice                                                                                             |
+| ods_code                                  | ODS (Organisation Data Service) identifier for the GP Practice.                                                     |
+| practice_name                             | GP Practice name.                                                                                                   |
+| clinical_system                           | clinical data system (EMIS, SystmOne) used within the GP Practice. This is based on information from CEG reporting. |
+| *column for each register/activity table* | patient count for table by GP Practice.                                                                             |
 

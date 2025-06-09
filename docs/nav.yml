@@ -21,6 +21,7 @@ nav:
             - Viewing VPN Log: Connection/View_Log.md
     - Database:
         - Data Overview: Database/Overview.md
+        - Changes From ELDB2024: Database/Changes2024.md
         - Known Issues: Database/Known_Issues.md
         - Version Log: Database/Version.md
     - Data:
@@ -41,6 +42,7 @@ nav:
             - Sexual Health: Data/Sexual_Health.md
             - Needs & Status: Data/Needs_&_Status.md
             - Accomodation: Data/Accommodation.md
+        - Referrals: Data/Referrals.md
     - Analysis:
         - Analysis Overview: Analysis/Analysis_Overview.md
         - Alcohol: Analysis/Alcohol.md
@@ -54,4 +56,3 @@ nav:
             - This Website: Other/Website.md
             - Website Updates: Other/Updates.md
             - Contact: Other/Contact.md
-            - Testing: Other/Testing.md

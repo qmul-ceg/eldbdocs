@@ -1,6 +1,3 @@
----
-publish: "true"
----
 # ELDB Server Password
 ## Your ELDB Server Username and Password
 CEG will provide you with a csv file containing the access and authentication details for the ELDB server. These access details are separate from the CEG-VPN credentials and are needed to connect to the SQL Server on which the ELDB data is hosted.  You will need to enter into the application that you use to query the ELDB data (eg SSMS, MS Access, R etc). These credentials consist of:
@@ -27,38 +24,39 @@ Password generators are available online, including:
 <https://rumkin.com/tools/password/>  
 <https://diceware.dmuth.org/>
 
-### Changing your Password using SQL
+## Changing your Password using an SQL Client
 This is the simplest method, if you have an [SQL client](../Connection/Clients/SQL_Clients.md) (SSMS, ADS, DBeaver etc) that is connected to the ELDB Server. Even if you don’t use SQL for data querying, it may be useful to have a SQL client connection specifically for this purpose.
 
-In the SQL client, create a new query and enter:
+In the SQL client, create a new query and enter (replace items in { } as indicated):
 ```sql
-ALTER LOGIN <username>;
-WITH PASSWORD = '<new password>'
-OLD_PASSWORD = '<old password>'
+ALTER LOGIN {username};
+WITH PASSWORD = '{new password}'
+OLD_PASSWORD = '{old password}'
 ```
-Note the single quotes around the new and old passwords. Run the query and check that no error messages are returned.
+**Note the single quotes around the new and old passwords.**
+Run the query and check that no error messages are returned.
 You will need to separately change any connection details in your applications to the new password.
 
-### Changing your Password using MS Access
+## Changing your Password using MS Access
 This method requires that you have an [ODBC DSN](../Connection/Clients/ODBC_DSN.md) set up for the ELDB Server for use in [Microsoft Access](../Connection/Clients/MS_Access.md).
 
 - Create a new Access database and proceed in the same way as instructed below for linking ELDB tables to Access:
 - Select to connect to a SQL Server or an ODBC data source.
 - Select *Link the data source by creating a linked table* and select the DSN that you created for the ELDB Server under the Machine Data Source tab.
-<p markdown="span" align="center">
+
 ![MS Access Setup](../_img/Connect/MSAccess_DSN.png)
-</p>
+
 - In the SQL Server Login Pop Up, enter your old (or current) password and click _Options >>_ to display the additional settings.
 - Confirm that Database refers the right database.
 - Tick *Change Password* and provide a new password
 - Click OK and then OK to close the *Link Tables* window. OK and Close any still open windows and then the Access database.
 
 Your password will have now been changed on the server and so can be used or changed in any other Access databases or applications you use.
-### Change your Password in SQLCMD
+## Change your Password in SQLCMD
 This is another simple method, if you have SQLCMD installed on your device.
 
-- Open a Command Prompt or PowerShell and type:
+- Open a Command Prompt or PowerShell and type (replace items in { } as indicated):
 ```bash
-sqlcmd -S eldb.qmul-ceg.net -U <username> -P <password> -Z <new password>
+sqlcmd -S eldb.qmul-ceg.net -U {username} -P {password} -Z {new password}
 ```
 - Press enter to run the command. If there are no problems, the cursor will open a new line as 1>. Type exit to leave the utility.

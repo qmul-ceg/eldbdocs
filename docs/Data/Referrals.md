@@ -21,11 +21,11 @@ Table of fieldnames + description specific to the table
 Additional information
 ***
 ## `referral_social_prescribing`
-Social referral prescribed (SOCPRESREF_COD)
+*Social referral prescribed (SOCPRESREF_COD)*
 
-| fieldname          | description                                                                            |
-| ------------------ | -------------------------------------------------------------------------------------- |
-| latest_date        | latest code date                                                                       |
-| latest_code        | latest code                                                                            |
-| latest_name        | latest code name                                                                       |
+| fieldname   | description                       |
+| ----------- | --------------------------------- |
+| latest_date | latest date of code for register  |
+| latest_code | SNOMED concept id for latest code |
+| latest_name | code term for latest code         |
 

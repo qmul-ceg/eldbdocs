@@ -87,7 +87,8 @@ Measurements of components or substances found within blood.
 | lft_latest_name  | code term for latest Liver Function Test code         |
 | lft_latest_value | value associated to latest Liver Function Test code   |
 
-Liver Function Test includes a range of tests assessing liver function.  This data shows the latest test recorded in the patient's record - other LFT tests may have been recorded on the same day.
+> Note:
+> Liver Function Test includes a range of tests assessing liver function.  This data shows the latest test recorded in the patient's record - other LFT tests may have been recorded on the same day.
 
 ## `measures_body` (Body related)
 Measurements of the physical body.
@@ -121,16 +122,17 @@ Measurements of heart function.
 | bpparent_latest_name  | code term for latest parent Blood Pressure code         |
 | match_algorithm | number code of the algorithm used for Blood Pressure match   |
 
-**Parent Blood Pressure**  
-SNOMED code indicating a Blood Pressure activity, to which a Systolic and Diastolic code pair are linked.
-
-**Match Algorithm**  
-1. Systolic matched to diastolic using their common parent
-2. Systolic matched to diastolic with nearest record id
-3. Systolic matched to only diastolic recorded on the same date
-4. Systolic matched to diastolic based ranked date and record id
-
-For full information see [Analysis: Blood Pressure](../Analysis/Blood_Pressure.md)
+> Note:  
+> **Parent Blood Pressure**  
+> SNOMED code indicating a Blood Pressure activity, to which a Systolic and Diastolic code pair are linked.
+>
+> **Match Algorithm**  
+> 1. Systolic matched to diastolic using their common parent  
+> 2. Systolic matched to diastolic with nearest record id  
+> 3. Systolic matched to only diastolic recorded on the same date  
+> 4. Systolic matched to diastolic based ranked date and record id  
+> 
+> For full information see [Analysis: Blood Pressure](../Analysis/Blood_Pressure.md)
 ### Pulse Rate 
 *Pulse Rate code (PLSRATE_COD)*
 
@@ -224,4 +226,5 @@ Risk stratification of frailty calculated from patient record
 | frailty_status_latest_value | value associated to latest Frailty Status code                      |
 | frailty_status              | Rockwood Frailty Scale term derived from frailty_status_latest_name |
 
-The `frailty_status` column simplifies the code term provided by the `fraility_status_latest_name` to provide a consistent Rockwood Frailty Scale term:
+> Note:
+> The `frailty_status` column simplifies the code term provided by the `fraility_status_latest_name` to provide a consistent Rockwood Frailty Scale term:

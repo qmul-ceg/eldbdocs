@@ -1,6 +1,3 @@
----
-publish: "true"
----
 # Microsoft Access
 
 Microsoft Access is a database application available within the Microsoft Office suite. It can link to tables within an East London Database using an ODBC driver within a user DSN. This should be setup to not download or copy the data to your device.
@@ -8,26 +5,18 @@ Microsoft Access is a database application available within the Microsoft Office
 Whilst it is possible to host multiple connections within a single MS Access file, this could be cumbersome. We have found that queries joining tables from two databases run extremely slowly or never finishing at all. At the moment, therefore, cross database/year analysis is not possible. Our recommendation is to create separate MS Access database files for each database/year.
 
 ## ODBC Driver and User DSN
-
-Before continuing with this setup, make sure you have completed the setup the ODBC driver and created a User DSN on your laptop or PC. Guidance is provided separately.
+Before continuing with this setup, make sure you have completed the [ODBC driver setup](ODBC_DSN.md) and created a User DSN on your laptop or PC.
 
 ## Connect MS Access to the ELDB Server
-
 Create a new Access database within a secure location.
-
 In the new Access database, select to connect to a SQL Server or ODBC data source. Different versions of MS Access do this slightly differently. For instance:
-
-Select External Data > From Database > SQL Server.
-
-Select External Data > New Data Source > From Other Sources > ODBC Database.
-
+	Select External Data > From Database > SQL Server.
+	Select External Data > New Data Source > From Other Sources > ODBC Database.
 Select Link the data source by creating a linked table and select OK.
-
 In the Pop Up, select the Machine Data Source tab and then select the DSN that you created for the ELDB Server.
-
 Click OK.
 
-![A screenshot of a computer
+![](../../_img/Connect/Accessimage023.png)
 
 
 In the SQL Server Login Pop Up, enter your password.
@@ -40,7 +29,7 @@ An Option is also provided to change your password, if needed.
 
 Click OK
 
-![A screenshot of a computer
+![](../../_img/Connect/Accessimage025.png)
 
 
 In the Link Tables dialog box, select each ELDB table with which you wish to link. ELDB tables and views are prefixed with dbo. Do not select any of the system tables (information_schema., sys.).
@@ -49,7 +38,7 @@ Each table has to be select one by one, using a mouse click or spacebar and arro
 
 Click OK.
 
-![A screenshot of a computer
+![](../../_img/Connect/Accessimage027.png)
 
 
 A popup will warn that the table contains BigInt data type. Click Yes.
@@ -72,7 +61,7 @@ Ticking this option means that you will not have to provide a password each time
 
 The ELDB database uses a datatype of ‘bigint’, which is not recognised as standard by Access and requires a change in the settings. Without this change, the ELDB data will be displayed as ‘#Deleted’.
 
-![A screenshot of a computer
+![](../../_img/Connect/Accessimage030.png)
 
 
 Changing the setting can either be done during the table linking, described above, or via the Access settings.
@@ -83,7 +72,7 @@ Scroll down to _Data Type Support Options_
 
 Tick ‘Support Large Number (BigInt) Data Type for Linked/Imported Tables’ and OK
 
-![A screenshot of a computer
+![](../../_img/Connect/Accessimage031.png)
 
 
 A popup will warn you that must open and close the database. Click OK and reopen the database.
@@ -116,19 +105,19 @@ Select External Data > Linked Table Manger
 
 Tick the ODBC Data Source Name and click Add.
 
-![A screenshot of a computer
+![](../../_img/Connect/Accessimage033.png)
 
 
 Keep the Data source name as “ODBC” and select the data source as ‘Custom’.
 
-![A screenshot of a computer
+![](../../_img/Connect/Accessimage035.png)
 
 
 Click Next
 
 In the Add New Link popup, fill in the Data Source Path with the ELDB hostname, prefixed with ‘tcp:’ – “tcp:eldb.qmul-ceg.net”.
 
-![A screenshot of a computer program
+![](../../_img/Connect/Accessimage037.png)
 
 
 Click Finish

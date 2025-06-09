@@ -1,6 +1,3 @@
----
-publish: "true"
----
 # East London Database
 This is the documentation site for the East London Database 2025 (`eldb2025`), maintained by the **Clinical Effectiveness Group** at Queen Mary University of London. It provides information on using this data resource.
 

@@ -117,14 +117,14 @@ earliest_name | code term for earliest code
 ## `depression`
 *Aged \>= 18 years, and Depression code (DEPR_COD) recorded \>= 2006-04-01 excluding patients with a more recent resolved code (DEPRES_COD)*
 
-fieldname     | description
-----------    |------------
-earliest_date | earliest, ie diagnosis, date of code for register
-earliest_code | SNOMED concept id for earliest code
-earliest_name | code term for earliest code
-latest_date   | latest date of code for register
-latest_code   | SNOMED concept id for latest code
-latest_name   | code term for latest code
+| fieldname     | description                                       |
+| ------------- | ------------------------------------------------- |
+| earliest_date | earliest, ie diagnosis, date of code for register |
+| earliest_code | SNOMED concept id for earliest code               |
+| earliest_name | code term for earliest code                       |
+| latest_date   | latest date of code for register                  |
+| latest_code   | SNOMED concept id for latest code                 |
+| latest_name   | code term for latest code                         |
 
 For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](../Analysis/Mental_Health.md)
 
@@ -352,7 +352,8 @@ lithium_latest_date   | latest, ie prescription, date of code for medication rec
 lithium_latest_code   | SNOMED concept id for latest code for medication recorded \>= last 6 months
 lithium_latest_name   | code term for latest code for medication recorded \>= last 6 months
 
-Severe Mental Illness (SMI) includes both schizophrenia and bipolar disorder and anyone on lithium who is not also coded having these conditions. For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](../Analysis/Mental_Health.md)
+> Note:
+> Severe Mental Illness (SMI) includes both schizophrenia and bipolar disorder and anyone on lithium who is not also coded having these conditions. For full information on the range of Mental Health registers and prescribing see [Analysis: Mental Health](../Analysis/Mental_Health.md)
 
 ## `sti` (Sexually Transmitted Infection, STD)
 *Sexually Transmitted Infection code (STI_CEG)*

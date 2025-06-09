@@ -21,7 +21,8 @@ Regular registration with a start date prior to the run date and an end date NUL
 | lsoa_2011      | LSOA (Lower Super Output Area) for 2011 relating to the patient's identified current address.                               |
 | pt_area_id     | area_id based on patient's identified current address. NULL means the patient lives outside the North East London ICB area. |
 
-Because of the difficulties identifying some registrations, there are some persons (person_id) that appear as multiple patients (patient_id) at different practices. This may be due to patients moving practice; errors in the registration data held by a practice; or a patient deliberately registering and receiving healthcare with multiple practices. It is not possible to better define or clean the data. For most analyses, we recommend using patient_id.
+> Note: 
+> Because of the difficulties identifying some registrations, there are some persons (person_id) that appear as multiple patients (patient_id) at different practices. This may be due to patients moving practice; errors in the registration data held by a practice; or a patient deliberately registering and receiving healthcare with multiple practices. It is not possible to better define or clean the data. For most analyses, we recommend using patient_id.
 
 ## CORE Views
 Views are virtual tables within a SQL database that provide a specified subset of the actual data. These Views appear as standard tables within MS Access and can be linked for use in queries in the same way. A series of Views are provided that filter the CORE table to each specific area.
@@ -31,11 +32,11 @@ View based on area_id, which is defined by the location of the registered GP Pra
 
 #### `CORE_BK`
 #### `CORE_CH`
-####  `CORE_HV`
-####  `CORE_NH`
-####  `CORE_RB`
-####  `CORE_TH`
-####  `CORE_WF`
+#### `CORE_HV`
+#### `CORE_NH`
+#### `CORE_RB`
+#### `CORE_TH`
+#### `CORE_WF`
 
 ### CORE Area: Patient Residency
 View based on pt_area_id, which is defined by patient's identified current address. These are the patients actually resident within the borough.

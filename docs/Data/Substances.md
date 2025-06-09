@@ -82,7 +82,7 @@ declinedint_latest_date    | latest Alcohol Intervention Declined code date
 declinedint_latest_code    | SNOMED concept id for latest Alcohol Intervention Declined code
 declinedint_latest_name    | code term for latest Alcohol Intervention Declined code
 
-*See Appendix 1: Alcohol Units Per Week*
+See [Alcohol Units Per Week](../Analysis/Alcohol.md)
 
 ## `substance_misuse`
 *Illicit Substance Abuse code (ILLSUB_COD), excluding patients with a more recent Non-Substance Misuser code (NONILLSUB_CEG).  

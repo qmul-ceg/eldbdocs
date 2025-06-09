@@ -2,7 +2,7 @@
 The lookup tables (prefixed with `lu_`) contain code maps and categorisations to help with data analysis.
 ### Information format:
 
-**`table name`**  
+`table name`  
 *Summary explanation of the table's purpose.*    
 Table of fieldnames + description specific to the table.
 **Non-Duplicate field** shown in bold as the main lookup field.
@@ -77,7 +77,8 @@ Supporting tables, such as keys for main table
 | lad_id               | LAD identifier (London only)                                                    |
 | area_id              | area/LAD identifier (North East London only)                                    |
 
-The boundary changes in LSOA 2021 make it difficult to map to the LSOA 2011 based IMD 2019 scores and ranking.  See [lu_lsoa2021](#lu_lsoa2021) for more detail.  LSOA and IMD based on the patient's postcode are provided in [CORE](../Data/Core.md).
+> Note:  
+> The boundary changes in LSOA 2021 make it difficult to map to the LSOA 2011 based IMD 2019 scores and ranking.  See [lu_lsoa2021](#lu_lsoa2021) for more detail.  LSOA and IMD based on the patient's postcode are provided in [CORE](../Data/Core.md).
 
 | identifier | area                                     |
 | ---------- | ---------------------------------------- |
@@ -109,9 +110,10 @@ The boundary changes in LSOA 2021 make it difficult to map to the LSOA 2011 base
 | itl2021_1      | International Territorial Level 1 code defined in 2021 (national region)                                 |
 | itl2021_1_name | ITL1 2021 name                                                                                           |
 
-Note that some LAD2023 breakdown into smaller LAU2021, which cause some duplication in the `lad2023` fields.  This is not the case, however, for authorities in London.
+> Note:> 
+> Some LAD2023 breakdown into smaller LAU2021, which cause some duplication in the `lad2023` fields.  This is not the case, however, for authorities in London.
 
-### `lu_ons`
+## `lu_ons`
 *ONS codes for Country, Region, NHS Region, County, ICB, Sub-ICB, Local Authority District, with ODS code and CEG short identifier where applicable.*
 
 | fieldname           | description                             |
@@ -197,10 +199,11 @@ For more information, see the [ONS Open Geography Portal](<https://geoportal.sta
 | **ethnic_19**  | varchar(2)   | 0        | ethnicity 19+1 categorisation (eg W1-O9, NS, UU) |
 | ethnic_19_name | varchar(150) | 1        | ethnicity 19+1 category names                    |
 
-Fieldnames have been revised to a simpler `ethnic_`+ number of categories, eg `ethnic_18`. Where needed, a letter suffix differentiates categories with the same number of categories, eg `ethnic_5` and `ethnic_5a`.		
-- `ethnic_5a` & `ethnic_16` based on 2001 census. Used as standard NHS categories. Chinese classifed as O Other ethnic group / R Chinese  
-- `ethnic_5` & `ethnic_18` based 2011 census, also known as Self Defined Ethnicity (SDE). Used by public services and in Governmental reporting. Chinese reclassifed as A Asian / A4 Chinese. Arab added as O Other ethnic group / O2 Arab  
-- `ethnic_19` based 2021 census. Roma added as W White / W9 Roma  
+> Note:  
+> Fieldnames have been revised to a simpler `ethnic_`+ number of categories, eg `ethnic_18`. Where needed, a letter suffix differentiates categories with the same number of categories, eg `ethnic_5` and `ethnic_5a`.		
+> - `ethnic_5a` & `ethnic_16` based on 2001 census. Used as standard NHS categories. Chinese classifed as O Other ethnic group / R Chinese  
+> - `ethnic_5` & `ethnic_18` based 2011 census, also known as Self Defined Ethnicity (SDE). Used by public services and in Governmental reporting. Chinese reclassifed as A Asian / A4 Chinese. Arab added as O Other ethnic group / O2 Arab  
+> - `ethnic_19` based 2021 census. Roma added as W White / W9 Roma  
 
 ## `lu_practice`
 *GP Practices in North East London*

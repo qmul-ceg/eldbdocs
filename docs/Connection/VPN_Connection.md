@@ -7,8 +7,8 @@ Ensure you have followed the instructions in [Setting Up CEG-VPN Access](../Conn
 > - Right-click the OpenVPN tray icon and click *Connect*.
 > - A window will appear displaying connection information.
 > - In the authentication window:
-> 	- Enter the current code displayed in your OTP Authenticator into *Response*
-> 	- Click *OK*
+> - Enter the current code displayed in your OTP Authenticator into *Response*
+>	- Click *OK*
 
 > [!note]- OpenVPN Connect (Windows / Mac)
 > - Open OpenVPN Connect and click on the CEG-VPN3 Profile

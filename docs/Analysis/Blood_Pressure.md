@@ -1,6 +1,6 @@
-# Information: Blood Pressure
+# Blood Pressure
 
-## Methodology
+## Blood Pressure Methodology
 In the Compass data, a blood pressure is represented by a combination of up to 3 codes:
 
 - The *parent*, or reading, code to indicate a Blood Pressure has been taken but with no attached value. This is often *SN 163020007 (On examination - blood pressure reading (finding))*

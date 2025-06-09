@@ -32,5 +32,5 @@ Additional information
 | `property_id`     | Internal database ID for property matched by ASSIGN                                                                                                                                                       |
 | `patient_count`   | Count of patients found at the `property_id`                                                                                                                                                              |
 
-*See Data Analysis and Information: Household for more details.*
+See [Analysis: Household](../Analysis/Household.md) for more details.
 

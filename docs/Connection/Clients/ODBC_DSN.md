@@ -1,6 +1,3 @@
----
-publish: "true"
----
 # ODBC Driver & DSN
 
 A Data Source Name (DSN) holds the connection information required for a data client on Windows to connect with a data source – in this case the ELDB Server. It specifies the ODBC driver to use and the server address. Both MS Access and Power Query (Excel and Power BI) use a DSN to connect to the ELDB server.
@@ -31,7 +28,7 @@ In the ODBC Data Source Administrator (64-bit) app select the User DSN tab.
 
 Click Add and in the Pop Up choose the ODBC Driver \[xx\] for SQL Server and click Finish.
 
-![A screenshot of a computer
+![](../../_img/Connect/DSNimage008.png)
 
 
 In the new Pop Up, add the following information:
@@ -42,69 +39,49 @@ Description: ELDB Server connection
 
 Server: tcp:eldb.qmul-ceg.net
 
-![A screenshot of a computer
+![](../../_img/Connect/DSNimage010.png)
 
 
 Click **Next**
 
 In the next screen, select **With SQL Server authentication using a login ID…** and enter your login ID and password.
 
-![A screenshot of a computer
+![](../../_img/Connect/DSNimage012.png)
 
 
 Click **Next**.
 
 For the next few screens, ODBC Driver 18 for SQL Server has a slightly different setup to ODBC Driver 17 for SQL Server and earlier. Please follow the appropriate instructions.
 
-### ODBC Driver 18 for SQL Server
+> [!note]- ODBC Driver 18 for SQL Server
+> 
+> Click **Next**.
+> Click **Next** again to move on 2 screens.
+> Tick Trust server certificate
+> ![](../../_img/Connect/DSNimage014.png)
+> Click **Back** to navigate to the previous screen.
+> **Change the default database to** the most recent ELDB database or the one you usually connect to eg eldb2023. You will get a list of databases present on the ELDB server to choose from. Ignore any databases with suffixes (eg eldb2020_DEV) and any other non ‘eldb’ database names.
+> Note: this is the default database for the DSN. Other databases can be specified where it is used in an application.
+> Change the Application intent to READONLY.
+> ![](../../_img/Connect/DSNimage016.png)
+> Click **Next** to return to the Trust server screen.
+> Click **Finish**.
 
-Click **Next**.
-
-Click **Next** again to move on 2 screens.
-
-Tick Trust server certificate
-
-![A screenshot of a computer
-
-
-Click **Back** to navigate to the previous screen.
-
-**Change the default database to** the most recent ELDB database or the one you usually connect to eg eldb2023. You will get a list of databases present on the ELDB server to choose from. Ignore any databases with suffixes (eg eldb2020_DEV) and any other non ‘eldb’ database names.
-
-Note: this is the default database for the DSN. Other databases can be specified where it is used in an application.
-
-Change the Application intent to READONLY.
-
-![A screenshot of a computer
-
-
-Click **Next** to return to the Trust server screen.
-
-Click **Finish**.
-
-### ODBC Driver 17 for SQL Server and earlier
-
-Click **Next**.
-
-**Change the default database to** the most recent ELDB database or the one you usually connect to eg eldb2023. Will get a list of databases present on the ELDB server to choose from. Ignore any databases with suffixes (eg eldb2020_DEV) and any other non ‘eldb’ database names. Change the **Application intent** to **READONLY**
-
-![A screenshot of a computer
-
-
-Click **Next**.
-
-Tick Use strong encryption for data and Trust server certificate
-
-![A screenshot of a computer
-
-
-Click **Finish**.
+> [!note]- ODBC Driver 17 for SQL Server and earlier
+>
+> Click **Next**.
+> **Change the default database to** the most recent ELDB database or the one you usually connect to eg eldb2023. Will get a list of databases present on the ELDB server to choose from. Ignore any databases with suffixes (eg eldb2020_DEV) and any other non ‘eldb’ database names. Change the **Application intent** to **READONLY**
+> ![](../../_img/Connect/DSNimage016.png)
+> Click **Next**.
+> Tick Use strong encryption for data and Trust server certificate
+> ![](../../_img/Connect/DSNimage019.png)
+> Click **Finish**.
 
 ## Check the Connection
 
 For either Driver version, you should now reach a preview of the DSN configuration.
 
-![A screenshot of a computer
+![](../../_img/Connect/DSNimage021.png)
 
 
 Click Test Data Source.
