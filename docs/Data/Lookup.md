@@ -80,6 +80,8 @@ Supporting tables, such as keys for main table
 > Note:  
 > The boundary changes in LSOA 2021 make it difficult to map to the LSOA 2011 based IMD 2019 scores and ranking.  See [lu_lsoa2021](#lu_lsoa2021) for more detail.  LSOA and IMD based on the patient's postcode are provided in [CORE](../Data/Core.md).
 
+### `area_id` key
+
 | identifier | area                                     |
 | ---------- | ---------------------------------------- |
 | BD         | Barking & Dagenham                       |
@@ -145,6 +147,8 @@ Supporting tables, such as keys for main table
 | lad2019_name       | Local Authority name 2019                                       |
 | imd2019_score      | Indices of Multiple Deprivation score calculated by ONS         |
 | imd2019_quintile   | Indices of Multiple Deprivation quintile calculated for England |
+
+### `changed` key
 
 | identifier | change action |
 | ---------- | ------------- |
@@ -239,12 +243,16 @@ For more information, see the [ONS Open Geography Portal](<https://geoportal.sta
 | dbid            | compass identifier for code                                                                           |
 | sn_dbid         | compass identifier for SNOMED code associated with code                                               |
 
+### code `scheme` key
+
 | identifier | code scheme |
 | ---------- | ----------- |
 | 71         | SNOMED      |
 | 1040444    | Read 2      |
 | 1130062    | CTV3        |
 | 1335379    | EMIS Local  |
+
+### `smok_status` key
 
 | identifier | smoking status                   |
 | ---------- | -------------------------------- |

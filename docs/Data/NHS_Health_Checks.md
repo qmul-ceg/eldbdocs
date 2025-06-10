@@ -51,8 +51,7 @@ For full information on NHS Health Checks and eligibility criteria see [Analysis
 | latest_name | code term for latest code         |
 
 ## `nhs_healthcheck_invite`
-
-*NHS Health Check Invite code (NHSHCINV_CEG) recorded \>= last 5 years. Selecting earliest date from LTC table (hypertension, diabetes, atrial_fibrillation, ckd, stroke_tia, heart_failure, pad, f_hypercholesterolemia, prescribed_statins) as ineligibility date and table.*  
+*NHS Health Check Invite code (NHSHCINV_CEG) recorded \>= last 5 years. Selecting earliest date from LTC tables (hypertension, diabetes, atrial_fibrillation, ckd, stroke_tia, heart_failure, pad, f_hypercholesterolemia, prescribed_statins) as ineligibility date and table.*  
 
 | fieldname            | description                                                       |
 | -------------------- | ----------------------------------------------------------------- |
@@ -66,5 +65,25 @@ For full information on NHS Health Checks and eligibility criteria see [Analysis
 For full information on NHS Health Checks and eligibility criteria see [Analysis: NHS Health Checks](../Analysis/NHS_Health_Checks.md)
 
 ## `nhs_healthcheck_elig2024`
+*CORE 2024 table filtered for patients aged \>= 40  
+Excluding patients with an ELDB2024 record of Hypertension, Diabetes, CKD, Heart Failure, PAD, Familial Hypercholesterolemia, Stroke/TIA, CHD, Atrial Fibrillation, or Statin prescription.*  
 
-*All 2024 CORE registers aged \>= 40, excluding patients with hypertension, diabetes, ckd, heart failure, pad, familial hypercholesterolemia, stroke/tia, CHD, atrial fibrillation, and statin prescription.*  
+| fieldname      | description                                                                                                                 |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| relrun_date    | relative run date for the database build                                                                                    |
+| person_id      | identifier of person across multiple NHS organisations. Analogous to NHS Number.                                            |
+| patient_id     | identifier of patient at a practice. Analogous to EMIS number.                                                              |
+| age            | age in years of patient on the run date                                                                                     |
+| sex            | sex (Female, Male, Other, Unknown) for patient                                                                              |
+| ethnicity_code | latest ethnicity SNOMED concept id.                                                                                         |
+| ethnic_16      | ethnicity 16+1 categorisation (eg A-Z,99)                                                                                   |
+| ethnic_5a      | ethnicity 5+1 (2001) categorisation (0-6)                                                                                   |
+| area_id        | area id for GP Practice (CH, NH, TH, WF, BK, HV, RB).                                                                       |
+| ods_code       | ODS (Organisation Data Service) identifier for the GP Practice.                                                             |
+| practice_name  | GP Practice name, as defined for CEG reporting. This may differ from the name on ODS records.                               |
+| reg_date       | calculated registration date for patient at practice                                                                        |
+| lsoa_2011      | LSOA (Lower Super Output Area) for 2011 relating to the patient's identified current address.                               |
+| pt_area_id     | area_id based on patient's identified current address. NULL means the patient lives outside the North East London ICB area. |
+
+> Note:
+> Columns `ceg_16` and `nhs_5` have been renamed `ethnic_16` and `ethnic_5a` respectively in order to fit with the revised [ethnicity tables](Lookup.md#lu_ethnicity2).
