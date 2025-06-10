@@ -1,8 +1,5 @@
----
-publish: "true"
----
 # SQLCMD
-
+## SQLCMD Overview
 The SQL Server Command Line Tool (SQLCMD utility) is a SQL utility within the Command Prompt or PowerShell, installed with SSMS and the ODBC for SQL Server driver. It is useful for managing your password on the ELDB SQL Server, as this is less easily managed in the DSN or in DBeaver.
 
 ## Check for SQLCMD

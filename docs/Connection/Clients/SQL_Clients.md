@@ -1,6 +1,7 @@
 # SQL Clients
+## SQL Overview
 
-The ELDB Server can be accessed directly using any SQL client software with capabilities for connect to Microsoft SQL Server. 
+The ELDB Server can be accessed directly using any SQL client software with capabilities for connect to Microsoft SQL Server.  This is the recommended method for using the ELDB databases.
 
 ## SQL Server Management Studio (SSMS)
 SQL Server Management Studio (SSMS) is the SQL client provided by Microsoft. It can be downloaded for free from [Microsoft](<https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15>).

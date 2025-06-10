@@ -1,4 +1,5 @@
 # Microsoft Access
+## Microsoft Access Overview
 
 Microsoft Access is a database application available within the Microsoft Office suite. It can link to tables within an East London Database using an ODBC driver within a user DSN. This should be setup to not download or copy the data to your device.
 
@@ -35,6 +36,10 @@ Click OK
 In the Link Tables dialog box, select each ELDB table with which you wish to link. ELDB tables and views are prefixed with dbo. Do not select any of the system tables (information_schema., sys.).
 
 Each table has to be select one by one, using a mouse click or spacebar and arrow keys.
+
+> [!tip]
+> Only link to the tables you need as you can add other later (see [Adding tables via DSN](#Adding tables via DSN))
+> Link to `db_tables` to have a list of all tables in the database.
 
 Click OK.
 
@@ -79,51 +84,39 @@ A popup will warn you that must open and close the database. Click OK and reopen
 
 ## Removing the dbo_ prefix
 
-The linked tables appear in Access with a schema prefix (dbo_). This can be removed by running a Visual Basic script contained in the VB_remove_dbo.bas file provided by CEG. Download this file to your laptop or PC.
+The linked tables appear in Access with a schema prefix (`dbo_`). This can be removed by running a Visual Basic script provided by CEG. 
 
-Within the Access database, open the Visual Basic module. This may be accessed in different ways depending on your version of MS Access. For instance:
+Download the [VB_remove_dbo.bas](https://www.qmul.ac.uk/ceg/media/ceg/documents/Visual-Basic-Script-for-MS-Access.zip)  script to your laptop or PC.
 
-Database Tools > Visual Basic
+Within the Access database, open the Visual Basic module. This may be accessed in different ways depending on your version of MS Access. For instance: Database Tools > Visual Basic
 
 Select _File > Import File_ and select the VB_remove_dbo.bas file. Click Open.
 
-Select _Run > Run Macro_ and Run the TruncateDBO macro.
+Select _Run > Run Macro_ and Run the *TruncateDBO* macro.
 
 Click OK to clear the message box.
 
 Close the Visual Basic module.
 
-It can take a couple of minutes for the table list to refresh, without the dbo_prefix.
+It can take a couple of minutes for the table list to refresh, without the `dbo_` prefix.
 
 ## Adding Additional Linked Tables
 
-Further tables can be later linked to the database.
-
-In the Access database, open the Linked Table Manager:
-
-Select External Data > Linked Table Manger
-
-Tick the ODBC Data Source Name and click Add.
+The DSN links MS Access to the tables and views specified in the Linked Tables dialogue.  New tables need to be manually added to make them available within MS Access.  Similarly, changes to the SQL Server tables requires a manual refresh for the MS Access view to be updated.
+### Adding tables via DSN
+Reconnect your Access database to your ODBC DSN by following the steps for [Connect MS Access to the ELDB Server](#Connect MS Access to the ELDB Server).
+At the Link Tables dialog box, select the additional tables with which you wish to link.   
+Click OK.
+As before, click Yes and OK to accept the BigInt datatype
+### Refreshing tables via Linked Table Manager
+Select External Data > Linked Table Manager
+Expand the Data Source Name (click on the “+” sign) and select all by selecting the ODBC checkbox. 
+OR alternatively, you can select the specific table(s) that you know need refreshing.
 
 ![](../../_img/Connect/Accessimage033.png)
 
+On the right-hand side of the window, click on “Refresh”.
+The refresh may take a few seconds
 
-Keep the Data source name as “ODBC” and select the data source as ‘Custom’.
-
-![](../../_img/Connect/Accessimage035.png)
-
-
-Click Next
-
-In the Add New Link popup, fill in the Data Source Path with the ELDB hostname, prefixed with ‘tcp:’ – “tcp:eldb.qmul-ceg.net”.
-
-![](../../_img/Connect/Accessimage037.png)
-
-
-Click Finish
-
-As described above, select the DSN under the Machine Data Source
-
-Provide your password.
-
-And select the additional tables to link.
+> [!tip]
+> Refresh your MS Access tables every month to ensure your database reflects any new items or amendments. We issue a monthly newsletter to East London Database users, which includes a list of any specific changes.

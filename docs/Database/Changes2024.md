@@ -16,8 +16,8 @@ LSOA has calculated from patient's postcode to ensure a precise definition for `
 - Added column `imd2019_rank` - IMD rank by country calculated by ONS
 - Added column `lsoa2021` - ONS (e-code) for LSOA 2021
 ## Database Info
-- Added table  [`db_clusters`](../Data/Structure_Info.md#db_clusters-code-clusters-in-tables) - NHS and CEG code clusters used to build tables  
-- Added table [`db_codeset_ceg`](../Data/Structure_Info.md#db_codeset_ceg-ceg-code-clusters) - CEG code clusters used in ELDB  
+- Added table  [`db_clusters`](Data/Database_Info.md#db_clusters-code-clusters-in-tables) - NHS and CEG code clusters used to build tables  
+- Added table [`db_codeset_ceg`](Data/Database_Info.md#db_codeset_ceg-ceg-code-clusters) - CEG code clusters used in ELDB  
 ## Ethnicity
 Updated ethnicity tables to improve consistency and quality of groupings and incorporate the 2021 census categorisations.
 

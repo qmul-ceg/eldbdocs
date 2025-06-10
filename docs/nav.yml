@@ -1,8 +1,7 @@
 nav:
     - Home: index.md
     - Connection:
-        - Overview:
-            - Connection Overview: Connection/VPN_Overview.md
+        - Overview: Connection/VPN_Overview.md
         - CEG VPN:
             - Required Software: Connection/Required_Software.md
             - Setting Up CEG-VPN Access: Connection/Setting_Up_VPN_Access.md
@@ -26,7 +25,7 @@ nav:
         - Version Log: Database/Version.md
     - Data:
         - Database Info & Lookup:
-            - Database Info: Data/Structure_Info.md
+            - Database Info: Data/Database_Info.md
             - Lookup Tables: Data/Lookup.md
         - Core (Current Registered Patients): Data/Core.md
         - Registers: Data/Registers.md
