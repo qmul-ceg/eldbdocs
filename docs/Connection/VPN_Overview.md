@@ -1,6 +1,6 @@
-# CEG-VPN3 Overview
+# CEG-VPN & Resources Overview
 
-## VPN Architecture
+## CEG-VPN3
 
 The CEG-VPN3 (Virtual Private Network) is a secured network hosted in Amazon Web Services, which is accessible only via a dedicated OpenVPN server.  The VPN contains several CEG resources, most notably Compass - our Discovery subscriber database.
 
@@ -11,3 +11,8 @@ Previous versions of the VPN (CEG-VPN1 and CEG-VPN2) used Duo Mobile to provide 
 The encryption used throughout is inline with [NHS Digital](https://digital.nhs.uk/services/gp-connect/develop-gp-connect-services/development/security) and National Cyber Security Centre ([NCSC](https://www.ncsc.gov.uk/guidance/tls-external-facing-services)) guidelines and employs up to date methods and standards.
 
 ![CEG-VPN](../_img/Connect/CEG-VPN_ELDB.png)
+
+## CEG Resources
+Once a user has connected into the CEG-VPN, they can connect to the CEG resources for which they have login or access credentials.  Each resource has it's own security requirements, which means access to one resource, such as the ELDB server, does not provide access to any other resource.
+
+The ELDB databases, one for each year, are held on the 'ELDB' Microsoft SQL Server.  Access requires a username and password, separate to the CEG-VPN credentials, connecting on the standard SQL Server port 1433.
