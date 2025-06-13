@@ -81,6 +81,7 @@ Supporting tables, such as keys for main table
 > Note:  
 > The boundary changes in LSOA 2021 make it difficult to map to the LSOA 2011 based IMD 2019 scores and ranking.  See [lu_lsoa2021](#lu_lsoa2021) for more detail.  LSOA and IMD based on the patient's postcode are provided in [CORE](../Data/Core.md).
 
+For full information on LSOA and IMD see [Analysis: LSOA & IMD](../Analysis/LSOA_IMD.md)
 ### `area_id` key
 
 | identifier | area                                     |

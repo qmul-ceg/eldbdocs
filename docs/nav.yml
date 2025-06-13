@@ -48,6 +48,7 @@ nav:
         - Blood Pressure: Analysis/Blood_Pressure.md
         - Cancer Screening: Analysis/Cancer_Screening.md
         - Household: Analysis/Household.md
+        - LSOA & IMD: Analysis/LSOA_IMD.md
         - Mental Health: Analysis/Mental_Health.md
         - NHS Health Checks: Analysis/NHS_Health_Checks.md
     - Other Information:

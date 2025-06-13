@@ -8,7 +8,7 @@ Connection to the OpenVPN server requires the user to have a suitable [VPN clien
 
 Previous versions of the VPN (CEG-VPN1 and CEG-VPN2) used Duo Mobile to provide 2-Factor Authentication.  CEG-VPN3 instead uses a username, password and TOTP (Time-synchronised One Time PIN) to provide user authentication.  The TOTP is generated from from an [OTP phone app](Required_Software.md#OTP-Authenticator) on the uses phone.   
 
-The encryption used throughout is inline with [NHS Digital](https://digital.nhs.uk/services/gp-connect/develop-gp-connect-services/development/security) and National Cyber Security Centre ([NCSC](https://www.ncsc.gov.uk/guidance/tls-external-facing-services)) guidelines and employs up to date methods and standards.
+The encryption used throughout is inline with [NHS Digital](https://digital.nhs.uk/services/gp-connect/develop-gp-connect-services/development/security){.new-tab}  and National Cyber Security Centre ([NCSC](https://www.ncsc.gov.uk/guidance/tls-external-facing-services){.new-tab}  ) guidelines and employs up to date methods and standards.
 
 ![CEG-VPN](../_img/Connect/CEG-VPN_ELDB.png)
 
