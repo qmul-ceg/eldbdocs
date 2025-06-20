@@ -11,7 +11,7 @@ The IMD is available as a score but is more readily usable as a national rank (1
 The most recent IMD calculation provided by ONS was in 2019, with the previous calculation in 2015. An update to English IMD has been announced for late 2025 ([OCSI](https://ocsi.uk/2023/07/10/we-are-updating-the-english-indices-of-deprivation){.new-tab} ), which is expected to use the latest LSOA 2021 geographies.  In the meantime, the available IMD 2019 can only link to LSOA 2011.
 
 ## IMD & LSOA by Postcode
-For ELDB2025 we have used ONS postcodes-LSOA lookup tables, with the patient's postcode available via Compass, to map each patient's address to a LSOA2021 and a LSOA2011.  This gets round the issue of split or merged LSOA and allows us, in turn, to provide an IMD 2019 score and rank for the patient.  All this information is provide in the [`CORE`](../Data/core.md) table.
+For ELDB2025 we have used ONS postcodes-LSOA lookup tables, with the patient's postcode available via Compass, to map each patient's address to a LSOA2021 and a LSOA2011.  This gets round the issue of split or merged LSOA and allows us, in turn, to provide an IMD 2019 score and rank for the patient.  All this information is provide in the [`CORE`](../Data/Core.md) table.
 
 
 

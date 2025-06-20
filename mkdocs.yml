@@ -48,6 +48,8 @@ plugins:
         enabled: true
       links:
         wikilinks_enabled: true
+  - git-revision-date-localized:
+      type: iso_datetime
 
 markdown_extensions:
   - pymdownx.betterem # improved md formatting

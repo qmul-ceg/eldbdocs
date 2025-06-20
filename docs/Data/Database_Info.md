@@ -103,3 +103,14 @@ Patient counts by Practice for each Register and Activity table within the datab
 | clinical_system                           | clinical data system (EMIS, SystmOne) used within the GP Practice. This is based on information from CEG reporting. |
 | *column for each register/activity table* | patient count for table by GP Practice.                                                                             |
 
+## `db_version`
+Database version control
+
+| fieldname           | description                             |
+| ------------------- | --------------------------------------- |
+| id                  | table id                                |
+| version             | database version as 'major.minor.revision' |
+| major               | major version id - database year        |
+| minor               | minor version id                        |
+| revision            | revision or patch id                    |
+| version_date        | date version updated                    |
