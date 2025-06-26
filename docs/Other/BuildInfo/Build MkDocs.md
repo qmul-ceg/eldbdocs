@@ -1,28 +1,51 @@
 # Build
 https://www.youtube.com/watch?v=Q-YA_dA8C20
 ## Github: Create new repo under qmul-ceg
-- name: `qmul-ceg/eldb-docs`
+- name: `qmul-ceg/eldbdocs`
 - Public
 - Add Readme file
 - Add .gitignore: Python
 - Licence: GNU GPL v3.0
 - default branch: `main`
-## Local: Install MKdocs Material + Support Packages
+## Local: Create Python Environment
+Setup a project environment, eg create *venv*
+> [!note]- Terminal
+> ```py
+> # check python version
+> py -0
+> 
+> cd path/to/eldbdocs
+> py -m venv .venv
+> 
+> python -m pip install --upgrade pip
+> ```
+
+> [!note]- VS Code
+> - Explorer > Open Folder - browse to `~\Github\eldbdocs`
+> - Allow file execution - *Yes, I trust the authors*
+> - Ctrl-Shift-P to open Command Palette > 'Python: Create environment'
+>	> - type = Venv
+>	-  interpreter = Python 3.x.0 ('env': venv)
+>	- ~> creates a .venv folder containing Python environment
+## Python: Install MKdocs Material + Support Packages
 - install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - `pip install mkdocs-material`
 	- also installs [MkDocs](https://www.mkdocs.org), [Python-Markdown](https://python-markdown.github.io/), [Pygments (Python syntax highlighter)](https://pygments.org/) and [PyMdown Extensions (Markdown Extensions)](https://facelessuser.github.io/pymdown-extensions/).
 - install [Awesome Nav for MkDocs](https://lukasgeiter.github.io/mkdocs-awesome-nav/) - `pip install mkdocs-awesome-pages-plugin`
 - install [Publisher for MkDocs](https://mkdocs-publisher.github.io/setup/installation/) - `pip install mkdocs-publisher`
 	- also reinstalls MkDocs, Material for MkDocs and PyMdown Extensions
 - **any additional installs need to be added to the github ci.yml - see below**
-## Local: Create New MkDocs Project
-- create mkdocs folder/files - `mkdocs new .`
-	- ~> creates `mkdocs.yml` and `docs/index.md`
-- open mkdocs.yml - add material theme:
+## Python: Create New MkDocs Project
+Create new MkDocs project
+```python
+## creates mkdocs.yml and docs/index.md
+mkdocs new .
+```
+Edit `mkdocs.yml` - add material theme
 ```yaml
 theme:
   name:material
 ```
-- add plugins in mkdocs.yml
+Edit `mkdocs.yml` - add plugins
 ```yaml
 plugins:
     - search
@@ -37,7 +60,7 @@ plugins:
         links:
         wikilinks_enabled: true
 ```
-- create `docs/nav.yml` containing navigation info
+Create `docs/nav.yml` and add navigation
 ```.pages
 nav:
     - Home: index.md
@@ -48,15 +71,10 @@ nav:
     - Data Information
         - ...
 ```
-- add markdown files
-## Local: View local version
-- run mkdocs - `mkdocs serve`
-	- ~> runs webserver showing *index.md* at http://127.0.0.1:8000/
-	- view in browser
-- saving a file (Ctrl-S) ~> updates and reloads in browser
-## Local: Github Pages Setup
-Creates a Github Action that runs whenever a Commit is Pushed.
-- create `eldb-docs\.github\workflows\ci.yml` containing:
+Create / Add markdown files into `docs/`
+
+Creates a Github Action that runs whenever a Commit is Pushed - deploys the site
+Create `eldbdocs\.github\workflows\ci.yml` containing:
 ```yaml
 name: ci 
 on:
@@ -83,9 +101,15 @@ jobs:
       - run: pip install mkdocs-publisher
       - run: mkdocs gh-deploy --force
 ```
-~> updates to repo will now automatically deploy
 ## Github: Set Repo to Use Github Pages
 - Settings > Pages
 	- Source: Deploy from a branch
 	- Branch: gh-pages
 	- Save
+Creates at: https://qmul-ceg.github.io/eldbdocs/
+## Custom Domain
+When using the custom domain `https://eldbdocs.qmul-ceg.net` a CNAME file contain just the domain name needs to be created in the `/docs` folder:
+```txt
+eldbdocs.qmul-ceg.net
+```
+

@@ -1,15 +1,15 @@
 # Setup
 ## Required Software
-- Python 3.10+-m 
+- Python 3.10+
 - a Python IDE (eg PyCharm or Visual Studio Code)
 - Git (and/or Github Desktop)
 
 ## Git: Clone Github Repo to a Local Repo
 ### Github Desktop
 - File >> Clone repository
-	- Select `qmul-ceg/eldb-docs` from the repo list
+	- Select `qmul-ceg/eldbdocs` from the repo list
 	- Choose the Local path in which to create the repo folder
-		- Git works best outside OneDrive. eg `C:\Users\Kelvin\Github\eldb-docs`
+		- Git works best outside OneDrive. eg `C:\Users\Kelvin\Github\eldbdocs`
 	- Clone ~> creates copy of repo + setups connection to Github repo
 ### Git
 ```git
@@ -27,14 +27,14 @@ Add
 
 ## Obsidian: Setup Vault
 - Open folder as vault >> Open
-	- Browse to `../eldb-docs/docs` >> Select folder
-- Rename vault to "eldb-docs" - vault cannot be open or the vault folders open in File Explorer
+	- Browse to `../eldbdocs/docs` >> Select folder
+- Rename vault to "eldbdocs" - vault cannot be open or the vault folders open in File Explorer
 -  Settings >> 
 - install *VSCode Editor* + Enable
 	- Options >> File Extensions: Add ",yml"
 	- (makes the nav.yml file visible for editing)
 - install *Vault Nickname* + Enable
-	- Options >> check Vault nickname: "eldb-docs"
+	- Options >> check Vault nickname: "eldbdocs"
 	- (stops Vault showing as simply "docs")
 - install *Editor Width Slider* + Enable
 	- creates slider in right-hand bottom of app. Set to 3
@@ -53,7 +53,7 @@ py -m venv .venv
 python -m pip install --upgrade pip
 ```
 ### VS Code
-- Explorer > Open Folder - browse to `~\Github\eldb-docs`
+- Explorer > Open Folder - browse to `~\Github\eldbdocs`
 - Allow file execution - *Yes, I trust the authors*
 - Ctrl-Shift-P to open Command Palette > 'Python: Create environment'
 	- type = Venv
