@@ -1,0 +1,58 @@
+nav:
+    - Home: index.md
+    - Connection:
+        - Overview: Connection/VPN_Overview.md
+        - CEG VPN:
+            - Required Software: Connection/Required_Software.md
+            - Setting Up CEG-VPN Access: Connection/Setting_Up_VPN_Access.md
+            - CEG-VPN Connection: Connection/VPN_Connection.md
+        - ELDB Server:
+            - ELDB Authentication: Connection/ELDB_Password.md
+        - Application Connection:
+            - SQL Clients: Connection/Clients/SQL_Clients.md
+            - ODBC & DSN Setup: Connection/Clients/ODBC_DSN.md
+            - Microsoft Access: Connection/Clients/MS_Access.md  
+            - PowerQuery (Excel & Power BI): Connection/Clients/PowerQuery.md
+            - SQLCMD: Connection/Clients/SQLCMD.md
+            - R & RStudio: Connection/Clients/RStudio.md
+        - Troubleshooting:
+            - Potential Issues: Connection/Troubleshooting.md
+            - Viewing VPN Log: Connection/View_Log.md
+    - Database:
+        - Data Overview: Database/Overview.md
+        - Changes From ELDB2024: Database/Changes2024.md
+        - Known Issues: Database/Known_Issues.md
+        - Version Log: Database/Version.md
+    - Data:
+        - Database Info & Lookup:
+            - Database Info: Data/Database_Info.md
+            - Lookup Tables: Data/Lookup.md
+        - Core (Current Registered Patients): Data/Core.md
+        - Registers: Data/Registers.md
+        - Measures: Data/Measures.md
+        - Medications:
+            - Prescriptions: Data/Prescriptions.md
+            - Vaccinations: Data/Vaccinations.md
+        - Checks & Screening:
+            - NHS Health Checks: Data/NHS_Health_Checks.md
+            - Screening: Data/Screening_&_Checks.md
+        - Lifestyle:
+            - Smoking, Alcohol, Drugs: Data/Substances.md
+            - Sexual Health: Data/Sexual_Health.md
+            - Needs & Status: Data/Needs_&_Status.md
+            - Accomodation: Data/Accommodation.md
+        - Referrals: Data/Referrals.md
+    - Analysis:
+        - Analysis Overview: Analysis/Analysis_Overview.md
+        - Alcohol: Analysis/Alcohol.md
+        - Blood Pressure: Analysis/Blood_Pressure.md
+        - Cancer Screening: Analysis/Cancer_Screening.md
+        - Household: Analysis/Household.md
+        - LSOA & IMD: Analysis/LSOA_IMD.md
+        - Mental Health: Analysis/Mental_Health.md
+        - NHS Health Checks: Analysis/NHS_Health_Checks.md
+    - Other Information:
+        - Website:
+            - This Website: Other/Website.md
+            - Website Updates: Other/Updates.md
+            - Contact: Other/Contact.md
