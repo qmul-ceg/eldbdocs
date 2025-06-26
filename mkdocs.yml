@@ -25,8 +25,8 @@ theme:
   font:
     text: Source Sans 3
     code: Source Code Pro
-  # logo: img/logos/CEG_logo_white3.png
-  favicon: img/logos/QMUL_purple.jpg
+  logo: _img/logos/QMUL_clear.png
+  favicon: _img/logos/QMUL_purple.jpg
 docs_dir: docs
 
 watch:
