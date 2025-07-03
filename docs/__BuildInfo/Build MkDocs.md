@@ -28,12 +28,29 @@ Setup a project environment, eg create *venv*
 >	-  interpreter = Python 3.x.0 ('env': venv)
 >	- ~> creates a .venv folder containing Python environment
 ## Python: Install MKdocs Material + Support Packages
-- install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - `pip install mkdocs-material`
-	- also installs [MkDocs](https://www.mkdocs.org), [Python-Markdown](https://python-markdown.github.io/), [Pygments (Python syntax highlighter)](https://pygments.org/) and [PyMdown Extensions (Markdown Extensions)](https://facelessuser.github.io/pymdown-extensions/).
-- install [Awesome Nav for MkDocs](https://lukasgeiter.github.io/mkdocs-awesome-nav/) - `pip install mkdocs-awesome-pages-plugin`
-- install [Publisher for MkDocs](https://mkdocs-publisher.github.io/setup/installation/) - `pip install mkdocs-publisher`
-	- also reinstalls MkDocs, Material for MkDocs and PyMdown Extensions
-- **any additional installs need to be added to the github ci.yml - see below**
+```Python
+pip install mkdocs-material
+pip install mkdocs-awesome-pages-plugin
+pip install mkdocs-publisher
+pip install mkdocs-git-revision-date-localized-plugin
+```
+**[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)**
+Installs  [MkDocs](https://www.mkdocs.org) + Material Theme with additional functionality:
+[Python-Markdown](https://python-markdown.github.io/)
+[Pygments (Python syntax highlighter)](https://pygments.org/)
+[PyMdown Extensions (Markdown Extensions)](https://facelessuser.github.io/pymdown-extensions/).
+
+**[Awesome Nav for MkDocs](https://lukasgeiter.github.io/mkdocs-awesome-nav/)**
+Adds improved sidebar navigation- `pip install mkdocs-awesome-pages-plugin`
+
+**[Publisher for MkDocs](https://mkdocs-publisher.github.io/setup/installation/)**
+Enables metatags, blogging and Obsidian integration
+also reinstalls MkDocs, Material for MkDocs and PyMdown Extensions
+
+**[mkdocs-git-revision-date-localized-plugin](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)**
+Adds last modified date to webpages
+
+**ensure installs are also added to `ci.yml` to be actioned in Github - see below**
 ## Python: Create New MkDocs Project
 Create new MkDocs project
 ```python
@@ -93,8 +110,8 @@ plugins:
 	      enabled: true
         links:
           wikilinks_enabled: true
-  - git-revision-date-localized:
-      type: iso_datetime  
+    - git-revision-date-localized:
+        type: iso_datetime  
 
 markdown_extensions:
   - pymdownx.betterem # improved md formatting
@@ -162,7 +179,7 @@ jobs:
           fetch-depth: 0
           sparse-checkout: |
             docs
-            includes
+            overrides
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
