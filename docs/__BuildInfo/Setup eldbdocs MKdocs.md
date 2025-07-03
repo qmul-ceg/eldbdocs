@@ -65,7 +65,7 @@ python -m pip install --upgrade pip
 - install [Awesome Nav for MkDocs](https://lukasgeiter.github.io/mkdocs-awesome-nav/) - `pip install mkdocs-awesome-nav`
 - install [Publisher for MkDocs](https://mkdocs-publisher.github.io/setup/installation/) - `pip install mkdocs-publisher`
 	- also reinstalls MkDocs, Material for MkDocs and PyMdown Extensions
-- **any additional installs need to be added to the github ci.yml [[Build MkDocs#Local Github Pages Setup]]**
+- **any additional installs need to be added to the github ci.yml [[__BuildInfo/Build MkDocs#Local Github Pages Setup]]**
 
 
 

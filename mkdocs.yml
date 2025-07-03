@@ -10,8 +10,8 @@ theme:
     # - toc.integrate # integrate the table of contents into the nav sidebar
     - navigation.top
     - navigation.indexes
-    - nvigation.instant
-    - nvigation.instant.progress
+    - navigation.instant
+    - navigation.instant.progress
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -29,6 +29,9 @@ theme:
   favicon: _img/logos/QMUL_purple.jpg
 docs_dir: docs
 
+exclude_docs: |
+  /__BuildInfo/
+
 watch:
   - overrides
 extra_css:
@@ -38,9 +41,6 @@ plugins:
   - search
   - awesome-nav:
       filename: nav.yml # renamed so it appears in Obsidian (with VSCode Editor plugin)
-  # - pub-meta:
-  #     publish:
-  #       file_default: true
   - pub-obsidian:
       obsidian_dir: .obsidian
       # templates_dir: _templates
