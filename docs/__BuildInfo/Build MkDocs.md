@@ -10,14 +10,14 @@ https://www.youtube.com/watch?v=Q-YA_dA8C20
 ## Local: Create Python Environment
 Setup a project environment, eg create *venv*
 > [!note]- Terminal
-> ```py
-> # check python version
-> py -0
-> 
+> ```python
 > cd path/to/eldbdocs
-> py -m venv .venv
 > 
-> python -m pip install --upgrade pip
+> ## check python launcher for versions installed (* is default)
+> py -0p
+> 
+> ## create with default py python version
+> py -m venv .venv
 > ```
 
 > [!note]- VS Code
@@ -29,7 +29,16 @@ Setup a project environment, eg create *venv*
 >	- ~> creates a .venv folder containing Python environment
 ## Python: Install MKdocs Material + Support Packages
 ```Python
+## activate the virtual environment
+cd path/to/eldbdocs
+.venv/scripts/activate
+
+## update pip installer
+python -m pip install --upgrade pip
+
+## install packages
 pip install mkdocs-material
+pip install mkdocs-awesome-nav
 pip install mkdocs-awesome-pages-plugin
 pip install mkdocs-publisher
 pip install mkdocs-git-revision-date-localized-plugin
@@ -188,7 +197,7 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs-material
-      - run: pip install mkdocs-awesome-nav
+      - run: pip install mkdocs-awesome-pages-plugin
       - run: pip install mkdocs-publisher
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: mkdocs gh-deploy --force

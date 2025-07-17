@@ -14,9 +14,9 @@
 ### Git
 ```git
 cd {parent folder}
-mkdir eldb-docs
-cd eldb-docs
-git clone git@github.com:qmul-ceg/eldb-docs
+mkdir eldbdocs
+cd eldbdocs
+git clone git@github.com:qmul-ceg/eldbdocs
 ```
 ## Git: Add Obsidian to gitignore
 Add
@@ -43,12 +43,16 @@ Add
 ## Python: Setup environment
 Setup your project environment, eg create *venv*
 ### Terminal
-```py
-# check python version
-py -0
+```python
+cd path/to/eldbdocs
 
-cd path/to/eldb-docs
+## check python versions installed (* is default)
+py -0p
+
+## create with default py python version
 py -m venv .venv
+## OR create with specific python version
+python3.13 -m venv .venv
 
 python -m pip install --upgrade pip
 ```
