@@ -2232,22 +2232,47 @@
 <tr>
 <td>2025.0.0</td>
 <td>2025-05-09</td>
-<td>1. Partial build for testing and JSNA development</td>
+<td>Partial build for testing and JSNA development</td>
 </tr>
 <tr>
 <td>2025.1.0</td>
 <td>2025-06-05</td>
-<td>1. Full table build, data missing<br>        Forest Surgery (F86026)<br>        WF Community &amp; Family Health Services Ltd (F86644))</td>
+<td>Full table build excluding 3 practices:<br>- Forest Surgery (F86026)<br>- WF Community &amp; Family Health Services Ltd (F86644)<br>- Beam Park Medical Practice (Y08371)</td>
 </tr>
 <tr>
 <td>2025.1.1</td>
 <td>2025-06-06</td>
-<td>1. Fixed no patients in <code>CORE_BK_pt</code> and <code>CORE_CH_pt</code><br>2. <code>lu_ons</code> - Amended <code>short_id</code> for Barking and Dagenham from 'BD' to 'BK'<br>3. <code>lu_imd2019</code> - Amended <code>area_id</code> to <code>lad_id</code> and <code>area2_id</code> to <code>area_id</code> for consistency and improved usability</td>
+<td>Fixed no patients in <code>CORE_BK_pt</code> and <code>CORE_CH_pt</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>lu_ons</code> - Amended <code>short_id</code> for Barking and Dagenham from 'BD' to 'BK'</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>lu_imd2019</code> - Amended <code>area_id</code> to <code>lad_id</code> and <code>area2_id</code> to <code>area_id</code> for consistency and improved usability</td>
 </tr>
 <tr>
 <td>2025.1.2</td>
 <td>2025-06-16</td>
-<td>1. Deleted <code>nolonger_homeless_temp</code> table - left by build in error<br>2. Fixed no data in <code>lu_ethnicity2_map</code> table<br>3. Fixed bug in <code>db_tables</code> that meant it reported <code>db_tables</code> contained 0 rows<br>4. Refreshed <code>db_tables</code> to provide counts for<code>CORE_BK_pt</code> and <code>CORE_CH_pt</code></td>
+<td>Deleted <code>nolonger_homeless_temp</code> table - left by build in error</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Fixed no data in <code>lu_ethnicity2_map</code> table</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Fixed bug in <code>db_tables</code> that meant it reported <code>db_tables</code> contained 0 rows</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Refreshed <code>db_tables</code> to provide counts for<code>CORE_BK_pt</code> and <code>CORE_CH_pt</code></td>
 </tr>
 <tr>
 <td></td>
@@ -2257,7 +2282,47 @@
 <tr>
 <td>2025.1.3</td>
 <td>2025-06-20</td>
-<td>1. Updated <code>db_version</code> for improved version control<br>2. <code>lu_imd2019</code> - Amended <code>lad_id</code> for Barking and Dagenham from 'BD' to 'BK'<br>3. <code>lu_imd2019</code> - Amended <code>area_id</code> to <code>area2_id</code>, as it contains combined boroughs and added <code>area_id</code> relating to the same geographies used in other tables.</td>
+<td>Updated <code>db_version</code> for improved version control</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>lu_imd2019</code> - Amended <code>lad_id</code> for Barking and Dagenham from 'BD' to 'BK'</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><code>lu_imd2019</code> - Amended <code>area_id</code> to <code>area2_id</code>, as it contains combined boroughs and added <code>area_id</code> relating to the same geographies used in other tables.</td>
+</tr>
+<tr>
+<td>2025.2.0</td>
+<td>2025-07-17</td>
+<td>Regenerated database to incorporate 3 practices that could not be included in initial build:<br>- Forest Surgery (F86026)<br>- Waltham Forest Community &amp; Family Health Services Ltd (F86644)<br>- Beam Park Medical Practice (Y08371)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Added Beam Park Medical Practice (Y08371) to <code>lu_practice</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Rebuilt <code>depression</code> with correct date range (01/04/2006 onwards) - previously built as 01/04/2007 onwards.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Rebuilt <code>cancer</code> with correct date range (01/04/2003 onwards) - previously built as 01/04/2004 onwards.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Added <code>db_counts</code> - previously missing</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Replaced <code>db_codeset_ceg</code> with <code>db_codesets</code> that includes all codesets (CEG and PCD) used in ELDB2025</td>
 </tr>
 </tbody>
 </table>
@@ -2281,7 +2346,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="June 20, 2025 12:17:47 UTC">2025-06-20 12:17:47</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="July 17, 2025 21:57:05 UTC">2025-07-17 21:57:05</span>
   </span>
 
     
