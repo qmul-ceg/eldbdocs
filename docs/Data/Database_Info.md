@@ -52,7 +52,7 @@ List of code clusters within the database
 | table_name          | table name                             |
 
 ## `db_codes` (codes in columns)
-List of codes, with counts, for each code column in the database
+List of codes found in each code column, with count of code.
 
 fieldname   | description
 ----------  |------------
@@ -79,13 +79,14 @@ create_time   | creation time
 modified_date | last modification date
 modified_time | last modification time
 
-## `db_codeset_ceg` (CEG code clusters)
-CEG code clusters
+## `db_codesets` (codesets in build)
+Codesets for clusters used in database build.
 
 | fieldname           | description                             |
 | ------------------- | --------------------------------------- |
 | id                  | code id within the table                |
-| ruleset             | analysis group for cluster_id           |
+| source              | codeset source (CEG, PCD = Primary Care Domain) |               |
+| ruleset             | analysis groups or NHS services using cluster_id           |
 | cluster_id          | code cluster id                         |
 | cluster_description | description of code cluster id          |
 | code                | SNOMED code                             |

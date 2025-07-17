@@ -2,13 +2,14 @@
 
 ## ELDB2025 Data Issues
 ### Missing Practices
-Two Waltham Forest practices and a Havering practice were not available in the Compass data at the time of the data extract in April 2025 due to issue with the data streamed from Optum (EMIS).
+The data for three practices was not initially available in the Compass data for the ELDB build,
+due to an issue with the data streamed from Optum (EMIS). 
 
 - Forest Surgery (F86026)
 - Waltham Forest Community & Family Health Services Ltd (F86644)
 - Beam Park Medical Practice (Y08371)
 
-This data has now been filed into Compass and we will extract and merge the data for these two practices into the current ELDB2025 during July 2025.
+The data has now filed into Compass and a separate data extract has been run for these three practices.  ELDB2025 was regenerated in July 2025 using the now complete ELDB2025 data extract (eldb2025.2.0).
 
 ## General Data Issues
 ### Patient Registration
