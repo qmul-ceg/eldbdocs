@@ -82,8 +82,32 @@ Supporting tables, such as keys for main table
 > Note:  
 > The boundary changes in LSOA 2021 make it difficult to map to the LSOA 2011 based IMD 2019 scores and ranking.  See [lu_lsoa2021](#lu_lsoa2021) for more detail.  LSOA and IMD based on the patient's postcode are provided in [CORE](../Data/Core.md).
 
+
+## ## `lu_imd2025`
+*IMD 2025  (Indice of Multiple Deprivation) for England as calculated in 2025 against Lower Super Output Areas (LSOA) defined in 2021.  With national rankings and quintiles by ICB and Local Authority (LAD).*
+
+| fieldname            | description                                                             |
+| -------------------- | ----------------------------------------------------------------------- |
+| **lsoa2021**         | Lower Super Output Area ONS code defined in 2021                        |
+| imd2025_score        | Indice of Multiple Deprivation calculated by ONS in 2025 (England only) |
+| country_id           | country identifier                                                      |
+| imd2025_rank         | IMD rank by country calculated by ONS                                   |
+| imd2025_quintile     | IMD quintile by country                                                 |
+| imd2025_decile       | IMD decile by country                                                   |
+| icb                  | Integrated Care Board ONS code                                          |
+| icb_name             | ICB name                                                                |
+| icb_id               | ICB identifier                                                          |
+| imd2025_quintile_icb | IMD quintile by ICB                                                     |
+| lad2025              | Local Authority District ONS code defined in 2023                       |
+| lad2025_name         | Local Authority District name                                           |
+| lad_id               | LAD identifier (London only)                                            |
+| imd2025_quintile_lad | IMD quintile by LAD                                                     |
+| area_id              | area/LAD identifier (London only)                                       |
+| area2_id             | combined area identifier (North East London only)                       |
+
 For full information on LSOA and IMD see [Analysis: LSOA & IMD](../Analysis/LSOA_IMD.md)
-### `area_id` and `area2_id key
+
+### `area_id` and area2_id key
 
 | identifier | area                                     |
 | ---------- | ---------------------------------------- |
@@ -106,7 +130,7 @@ For full information on LSOA and IMD see [Analysis: LSOA & IMD](../Analysis/LSOA
 | -------------- | -------------------------------------------------------------------------------------------------------- |
 | lad2023        | Local Authority District ONS code defined in 2023                                                        |
 | lad2023_name   | Local Authority District name                                                                            |
-| **lau2021**    | Local Administrative Unit 1 code defined in 2021 (district or unitary authorities)                       |
+| lau2021        | Local Administrative Unit 1 code defined in 2021 (district or unitary authorities)                       |
 | lau2021_name   | Local Administrative Unit name                                                                           |
 | itl2021_3      | International Territorial Level 3 code defined in 2021 (county, grouped district or unitary authorities) |
 | itl2021_3_name | ITL3 2021 name                                                                                           |
@@ -115,8 +139,25 @@ For full information on LSOA and IMD see [Analysis: LSOA & IMD](../Analysis/LSOA
 | itl2021_1      | International Territorial Level 1 code defined in 2021 (national region)                                 |
 | itl2021_1_name | ITL1 2021 name                                                                                           |
 
+
 > Note:> 
 > Some LAD2023 breakdown into smaller LAU2021, which cause some duplication in the `lad2023` fields.  This is not the case, however, for authorities in London.
+
+## `lu_localauthority25`
+*Revised 2025 ONS codes for local authorities with associated regional codes*
+
+| fieldname      | description                                                                                              |
+| -------------- | -------------------------------------------------------------------------------------------------------- |
+| lad2025        | Local Authority District ONS code defined in 2025                                                        |
+| lad2025_name   | Local Authority District name                                                                            |
+| lau2025        | Local Administrative Unit 1 code defined in 2025 (district or unitary authorities)                       |
+| lau2025_name   | Local Administrative Unit name                                                                           |
+| itl2025_3      | International Territorial Level 3 code defined in 2025 (county, grouped district or unitary authorities) |
+| itl2025_3_name | ITL3 2025 name                                                                                           |
+| itl2025_2      | International Territorial Level 2 code defined in 2025 (large or grouped counties, urban district)       |
+| itl2025_2_name | ITL2 2025 name                                                                                           |
+| itl2025_1      | International Territorial Level 1 code defined in 2025 (national region)                                 |
+| itl2025_1_name | ITL1 2025 name                                                                                           |
 
 ## `lu_ons`
 *ONS codes for Country, Region, NHS Region, County, ICB, Sub-ICB, Local Authority District, with ODS code and CEG short identifier where applicable.*
@@ -135,21 +176,24 @@ For full information on LSOA and IMD see [Analysis: LSOA & IMD](../Analysis/LSOA
 ## `lu_lsoa2021`
 *Lower Super Output Area (LSOA) defined in 2021 within England and Wales with associated LSOA 2011, LAD 2022 + LAD 2019 (Local Authority), and IMD score 2019*
 
-| fieldname          | description                                                     |
-| ------------------ | --------------------------------------------------------------- |
-| id                 | table id                                                        |
-| lsoa2021_code      | ONS (e-code) for LSOA 2021                                      |
-| lsoa2021_name      | LSOA 2021 name (Local Authority name & identifier)              |
-| changed            | relationship indicator for LSOA2011 to LSOA2021 (U, S, M, X)    |
-| lsoa2011_code      | ONS code (e-code) for LSOA 2011                                 |
-| lsoa2011_name      | LSOA 2011 name (Local Authority name & identifier)              |
-| lad2022_code       | ONS code (e-code) 2022 for local authority                      |
-| lad2022_name       | Local Authority name 2022                                       |
-| lad2022_name_wales | Local Authority name 2022 (Welsh Language)                      |
-| lad2019_code       | ONS code (e-code) 2019 for local authority                      |
-| lad2019_name       | Local Authority name 2019                                       |
-| imd2019_score      | Indices of Multiple Deprivation score calculated by ONS         |
-| imd2019_quintile   | Indices of Multiple Deprivation quintile calculated for England |
+| fieldname          | description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| id                 | table id                                                     |
+| lsoa2021_code      | ONS (e-code) for LSOA 2021                                   |
+| lsoa2021_name      | LSOA 2021 name (Local Authority name & identifier)           |
+| changed            | relationship indicator for LSOA2011 to LSOA2021 (U, S, M, X) |
+| lsoa2011_code      | ONS code (e-code) for LSOA 2011                              |
+| lsoa2011_name      | LSOA 2011 name (Local Authority name & identifier)           |
+| lad2022_code       | ONS code (e-code) 2022 for local authority                   |
+| lad2022_name       | Local Authority name 2022                                    |
+| lad2022_name_wales | Local Authority name 2022 (Welsh Language)                   |
+| lad2019_code       | ONS code (e-code) 2019 for local authority                   |
+| lad2019_name       | Local Authority name 2019                                    |
+| imd2019_score      | Indices of Multiple Deprivation 2019 score calculated by ONS |
+| imd2019_quintile   | Indices of Multiple Deprivation 2019 quintile (England)      |
+| imd2025_score      | Indices of Multiple Deprivation 2025 score calculated by ONS |
+| imd2025_quintile   | Indices of Multiple Deprivation 2025 quintile (England)      |
+| ind2025_rank       | Indices of Multiple Deprivation 2025 rank (England)          |
 
 ### `changed` key
 
