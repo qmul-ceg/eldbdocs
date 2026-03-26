@@ -207,31 +207,35 @@ For full information on LSOA and IMD see [Analysis: LSOA & IMD](../Analysis/LSOA
 For more information, see the [ONS Open Geography Portal](<https://geoportal.statistics.gov.uk>).
 
 ## `lu_ethnicity2`
-*Revised SNOMED to ethnicity categorisations for 5+1, 16+1, 18+1 and 19+1 based on 2021 census, with code count and Read2/CTV3 mapping.*
+*Revised SNOMED to ethnicity categorisations for 5+1, 16+1, 18+1 and 19+1 based on 2021 census, with code count and Read2/CTV3 mapping.
+Further revision to add SNOMED codes for Scottish 2022 census ethnicity responses and the associated 21+1 categorisation. Also added EMIS Local code mapping and rerun code count.*
 
-| fieldname      | datatype     | nullable | description                                           |
-| -------------- | ------------ | -------- | ----------------------------------------------------- |
-| id             | int          | 0        | row id                                                |
-| dbid           | int          | 1        | compass cim id                                        |
-| code_count     | int          | 1        | count of code recorded in `observation` (at Feb 2025) |
-| **sn_code**    | varchar(20)  | 1        | SNOMED code                                           |
-| sn_name        | varchar(200) | 1        | SNOMED code name                                      |
-| sn_description | varchar(200) | 1        | SNOMED code description                               |
-| ethnall        | varchar(50)  | 1        | code included in the PCD ETHNALL refset               |
-| eth2016        | varchar(50)  | 1        | code included in the PCD ETH2016 refset               |
-| ethnicitynd    | varchar(50)  | 1        | code included in the PCD ETHNICITYND refset           |
-| ethnic_5a      | int          | 1        | ethnicity 5+1 (2001) categorisation (0-6)             |
-| ethnic_5a_name | varchar(50)  | 1        | ethnicity 5+1 (2001) category names                   |
-| ethnic_16      | varchar(2)   | 1        | ethnicity 16+1 categorisation (eg A-Z,99)             |
-| ethnic_16_name | varchar(50)  | 1        | ethnicity 16+1 category names                         |
-| ethnic_5       | varchar(1)   | 1        | ethnicity 5+1 (2011) categorisation (eg W, M, U)      |
-| ethnic_5_name  | varchar(50)  | 1        | ethnicity 5+1 (2011) category names                   |
-| ethnic_18      | varchar(2)   | 1        | ethnicity 18+1 categorisation (eg W1-O9, NS, UU)      |
-| ethnic_18_name | varchar(150) | 1        | ethnicity 18+1 category names                         |
-| ethnic_19      | varchar(2)   | 1        | ethnicity 19+1 categorisation (eg W1-O9, NS, UU)      |
-| ethnic_19_name | varchar(150) | 1        | ethnicity 19+1 category names                         |
-| r2_code        | varchar(max) | 1        | mapped Read2 codes                                    |
-| r3_code        | varchar(max) | 1        | mapped Read3/CTV3 codes                               |
+| fieldname      | datatype      | nullable | description                                            |
+| -------------- | ------------- | -------- | ------------------------------------------------------ |
+| id             | int           | 0        | row id                                                 |
+| dbid           | int           | 1        | compass cim id                                         |
+| code_count     | int           | 1        | count of code recorded in `observation` (at Mar  2026) |
+| **sn_code**    | varchar(20)   | 1        | SNOMED code                                            |
+| sn_name        | varchar(200)  | 1        | SNOMED code name                                       |
+| sn_description | varchar(200)  | 1        | SNOMED code description                                |
+| r2_code        | varchar(1000) | 1        | mapped Read2 codes                                     |
+| r3_code        | varchar(1000) | 1        | mapped Read3/CTV3 codes                                |
+| emis_code      | varchar(1000) | 1        | mapped EMIS Local codes                                |
+| ethnall        | varchar(50)   | 1        | code included in the PCD ETHNALL refset                |
+| eth2016        | varchar(50)   | 1        | code included in the PCD ETH2016 refset                |
+| ethnicitynd    | varchar(50)   | 1        | code included in the PCD ETHNICITYND refset            |
+| ethnic_5a      | int           | 1        | ethnicity 5+1 (2001) categorisation (0-6)              |
+| ethnic_5a_name | varchar(50)   | 1        | ethnicity 5+1 (2001) category names                    |
+| ethnic_16      | varchar(2)    | 1        | ethnicity 16+1 categorisation (eg A-Z,99)              |
+| ethnic_16_name | varchar(50)   | 1        | ethnicity 16+1 category names                          |
+| ethnic_5       | varchar(1)    | 1        | ethnicity 5+1 (2011) categorisation (eg W, M, U)       |
+| ethnic_5_name  | varchar(50)   | 1        | ethnicity 5+1 (2011) category names                    |
+| ethnic_18      | varchar(2)    | 1        | ethnicity 18+1 categorisation (eg W1-O9, NS, UU)       |
+| ethnic_18_name | varchar(150)  | 1        | ethnicity 18+1 category names                          |
+| ethnic_19      | varchar(2)    | 1        | ethnicity 19+1 categorisation (eg W1-O9, NS, UU)       |
+| ethnic_19_name | varchar(150)  | 1        | ethnicity 19+1 category names                          |
+| ethnic_21      | varchar(2)    | 1        | ethnicity 21+1 categorisation (eg W1-O9, NS, UU)       |
+| ethnic_21_name | varchar(150)  | 1        | ethnicity 21+1 category names                          |
 
 ### `lu_ethnicity2_map`
 *Cross reference for ethnic categories to ensure consistency across categorisations.*
@@ -247,14 +251,17 @@ For more information, see the [ONS Open Geography Portal](<https://geoportal.sta
 | ethnic_5_name  | varchar(50)  | 1        | ethnicity 5+1 (2011) category names              |
 | ethnic_18      | varchar(2)   | 0        | ethnicity 18+1 categorisation (eg W1-O9, NS, UU) |
 | ethnic_18_name | varchar(150) | 1        | ethnicity 18+1 category names                    |
-| **ethnic_19**  | varchar(2)   | 0        | ethnicity 19+1 categorisation (eg W1-O9, NS, UU) |
+| ethnic_19      | varchar(2)   | 0        | ethnicity 19+1 categorisation (eg W1-O9, NS, UU) |
 | ethnic_19_name | varchar(150) | 1        | ethnicity 19+1 category names                    |
+| ethnic_21      | varchar(2)   | 0        | ethnicity 21+1 categorisation (eg W1-O9, NS, UU) |
+| ethnic_21_name | varchar(150) | 1        | ethnicity 21+1 category names                    |
 
 > Note:  
 > Fieldnames have been revised to a simpler `ethnic_`+ number of categories, eg `ethnic_18`. Where needed, a letter suffix differentiates categories with the same number of categories, eg `ethnic_5` and `ethnic_5a`.		
-> - `ethnic_5a` & `ethnic_16` based on 2001 census. Used as standard NHS categories. Chinese classifed as O Other ethnic group / R Chinese  
-> - `ethnic_5` & `ethnic_18` based 2011 census, also known as Self Defined Ethnicity (SDE). Used by public services and in Governmental reporting. Chinese reclassifed as A Asian / A4 Chinese. Arab added as O Other ethnic group / O2 Arab  
-> - `ethnic_19` based 2021 census. Roma added as W White / W9 Roma  
+> - `ethnic_5a` & `ethnic_16` based on 2001 census. Used as standard NHS categories. Chinese classified as O Other ethnic group / R Chinese  
+> - `ethnic_5` & `ethnic_18` based 2011 census, also known as Self Defined Ethnicity (SDE). Used by public services and in Governmental reporting. Chinese reclassified as A Asian / A4 Chinese. Arab added as O Other ethnic group / O2 Arab  
+> - `ethnic_19` based 2021 census. Roma added as W White / W9 Roma
+> - `ethnic_21` based on Scottish 2022 census. Includes W White / W6 Polish and added W White / W5 Showman or Showwoman
 
 ## `lu_practice`
 *GP Practices in North East London*
