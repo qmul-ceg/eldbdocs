@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../_img/logos/CEG_Social_Media_Icon256.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -2726,6 +2726,16 @@
 <td>2026-01-26</td>
 <td>Added and amended tables for the latest IMD2025 information + changes to ONS UK LAD codes (LAD codes in London are unchanged):<br>- <code>lu_imd2025</code> - new table containing IMD2025 with quintiles for ICB and LAD<br>- <code>lu_localauthority25</code> - new table with updated ONS UK Local Authority codes<br>- <code>lu_lsoa2021</code> - added columns for IMD2025 score, quintile and rank<br>- <code>lu_ons</code> - updated UK LAD codes to 2025 version</td>
 </tr>
+<tr>
+<td>2025.2.3</td>
+<td>2026-03-26</td>
+<td>Amended <em>ethnicity2</em> lookup tables to include SNOMED codes and ethnic categorisations used in the Scottish 2022 census.:<br>- <code>lu_ethnicity2</code> - Added SNOMED codes relating to the Scottish 2022 census ethnicity responses.  Added columns for associated <em>ethnic_21</em>  categorisation and mapped new and existing SNOMED codes to these categories.<br>- <code>lu_ethnicity2_map</code> - Added columns for the <em>ethnic_21</em>  categorisation. Include new categories:<br>    - <em>Showman or Showwoman</em> = W White / W5 Showman or Showwoman<br>    - <em>Polish</em> = W White / W6 Polish</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Expanded and adjusted the code mapping in <code>lu_ethnicity2</code> and recalculated code counts:<br>- Added <code>emis_code</code> column showing mapped EMIS Local codes.<br>- Repositioned <code>r2_code</code>, <code>r3_code</code> and <code>emis_code</code> columns within the table.<br>- Recalculated the <code>code_count</code> (count of code's appearance in observation table)</td>
+</tr>
 </tbody>
 </table>
 
@@ -2748,7 +2758,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="January 26, 2026 16:34:28 UTC">2026-01-26 16:34:28</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_datetime" title="March 26, 2026 12:47:48 UTC">2026-03-26 12:47:48</span>
   </span>
 
     
